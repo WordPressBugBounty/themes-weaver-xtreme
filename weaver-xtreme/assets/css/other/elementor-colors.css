@@ -1,0 +1,173 @@
+/* PRIMARY COLOR */
+.elementor-widget-heading .elementor-heading-title {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+	background-color: #882021;
+}
+
+.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap {
+	color:        #882021;
+	border-color: #882021;
+}
+
+.elementor-widget-image-box .elementor-image-box-content .elementor-image-box-title {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-icon.elementor-view-stacked .elementor-icon {
+	background-color: #882021;
+}
+
+.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon {
+	color:        #882021;
+	border-color: #882021;
+}
+
+.elementor-widget-icon-box.elementor-view-stacked .elementor-icon {
+	background-color: #882021;
+}
+
+.elementor-widget-icon-box.elementor-view-framed .elementor-icon, .elementor-widget-icon-box.elementor-view-default .elementor-icon {
+	color:        #882021;
+	border-color: #882021;
+}
+
+.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-icon-list .elementor-icon-list-icon i {
+	color: #882021;
+}
+
+.elementor-widget-counter .elementor-counter-number-wrapper {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-progress .elementor-progress-wrapper .elementor-progress-bar {
+	background-color: #882021;
+}
+
+.elementor-widget-progress .elementor-title {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-testimonial .elementor-testimonial-name {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-tabs .elementor-tab-title {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-accordion .elementor-accordion .elementor-tab-title {
+	color:       #882021;
+	font-weight: bold;
+}
+
+.elementor-widget-toggle .elementor-toggle .elementor-tab-title {
+	color:       #882021;
+	font-weight: bold;
+}
+
+/* SECONDARY COLOR */
+.elementor-widget-icon-list .elementor-icon-list-text {
+	color: pink;
+}
+
+.elementor-widget-counter .elementor-counter-title {
+	color:       pink;
+	font-weight: 100;
+}
+
+.elementor-widget-testimonial .elementor-testimonial-job {
+	color:       pink;
+	font-weight: 100;
+}
+
+
+/* TEXT COLOR */
+.elementor-widget-image .widget-image-caption {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+.elementor-widget-text-editor {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+.elementor-widget-divider .elementor-divider-separator {
+	border-top-color: #825e24;
+}
+
+.elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+.elementor-widget-icon-list .elementor-icon-list-item:not( :last-child ):after {
+	border-top-color: #825e24;
+}
+
+.elementor-widget-testimonial .elementor-testimonial-content {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+.elementor-widget-tabs .elementor-tab-content {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+.elementor-widget-accordion .elementor-accordion .elementor-tab-content {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+.elementor-widget-toggle .elementor-toggle .elementor-tab-content {
+	color:       #825e24;
+	font-weight: bold;
+}
+
+/* ACCENT COLOR */
+.elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button {
+	background-color: #e8c12f;
+}
+
+.elementor-widget-tabs .elementor-tab-title.elementor-active {
+	color: #e8c12f;
+}
+
+.elementor-widget-accordion .elementor-accordion .elementor-tab-title.elementor-active {
+	color: #e8c12f;
+}
+
+.elementor-widget-toggle .elementor-toggle .elementor-tab-title.elementor-active {
+	color: #e8c12f;
+}
+
+/*
+ *'earth' => [
+				'title' => 'Earth',
+				'items' => [
+					self::COLOR_1 => '#882021',
+					self::COLOR_2 => 'pink',
+					self::COLOR_3 => '#825e24',
+					self::COLOR_4 => '#e8c12f',
+				],
+*/

@@ -1,0 +1,48 @@
+<h1 id="alpha-color-picker-customizer-control">Alpha Color Picker Customizer Control</h1>
+<p>Ever wanted to pick an RGBa color using the WordPress color picker in the Customizer? Now you can with this drop-in replacement for the stock WP color picker control.</p>
+<p>Here&#39;s what it looks like:</p>
+<p><img src="https://github.com/BraadMartin/components/blob/master/demos/alpha-color-picker.gif" alt="WordPress Alpha Color Picker"></p>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-php">add_action( &#39;customize_register&#39;, &#39;yourprefix_customize_register&#39; );
+function yourprefix_customize_register( $wp_customize ) {
+
+    // Inlcude the Alpha Color Picker control file.
+    require_once( dirname( __FILE__ ) . &#39;/alpha-color-picker/alpha-color-picker.php&#39; );
+
+    // Alpha Color Picker setting.
+    $wp_customize-&gt;add_setting(
+        &#39;alpha_color_setting&#39;,
+        array(
+            &#39;default&#39;     =&gt; &#39;rgba(209,0,55,0.7)&#39;,
+            &#39;type&#39;        =&gt; &#39;theme_mod&#39;,
+            &#39;capability&#39;  =&gt; &#39;edit_theme_options&#39;,
+            &#39;transport&#39;   =&gt; &#39;postMessage&#39;
+        )
+    );
+
+    // Alpha Color Picker control.
+    $wp_customize-&gt;add_control(
+        new Customize_Alpha_Color_Control(
+            $wp_customize,
+            &#39;alpha_color_control&#39;,
+            array(
+                &#39;label&#39;         =&gt;  esc_html__( &#39;Alpha Color Picker&#39;, &#39;yourtextdomain&#39; ),
+                &#39;section&#39;       =&gt; &#39;colors&#39;,
+                &#39;settings&#39;      =&gt; &#39;alpha_color_setting&#39;,
+                &#39;show_opacity&#39;  =&gt; true, // Optional.
+                &#39;palette&#39;    =&gt; array(
+                    &#39;rgb(150, 50, 220)&#39;, // RGB, RGBa, and hex values supported
+                    &#39;rgba(50,50,50,0.8)&#39;,
+                    &#39;rgba( 255, 255, 255, 0.2 )&#39;, // Different spacing = no problem
+                    &#39;#00CC99&#39; // Mix of color types = no problem
+                )
+            )
+        )
+    );
+}
+</code></pre>
+<h2 id="more-information">More Information</h2>
+<p>I wrote a post with more detailed usage information <a href="http://braadmartin.com/alpha-color-picker-control-for-the-wordpress-customizer/">on my blog</a>.</p>
+<p>Feedback and pull requests are encouraged!</p>
+<h2 id="license">License</h2>
+<p>This control is licensed under the GPL. Please do anything you want with it. :)</p>

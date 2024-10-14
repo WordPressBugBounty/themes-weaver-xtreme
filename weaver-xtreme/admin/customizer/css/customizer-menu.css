@@ -1,0 +1,308 @@
+/* Style for wx-jump Menu with integrated RTL rules
+ * Version 3.0
+ */
+
+/* Customizer refresh button */
+/*
+#wx-refresh {
+	display:inline-block;
+	color:#298cba;
+	border:1px solid grey;
+	border-radius:5px;
+	background-color:#dadada;
+	position: absolute;
+	top: 10px;
+	right:-30px;
+	font-weight:bold;
+	padding:3px 0;
+	line-height:.8;
+}
+
+
+body.rtl #wx-refresh {
+	right:110px;
+} */
+
+/*general styling*/
+#wx-jump ul, #wx-jump li {
+	list-style: none;
+	cursor:     pointer;
+}
+
+#wx-where-jumpmenu li {
+	cursor: default;
+}
+
+#wx-jump .wx-tab-title {
+	cursor: default !important;
+}
+
+#wx-where-jumpmenu li ul li {
+	cursor: pointer;
+}
+
+#wx-jump {
+	position:  fixed;
+	z-index:   50010;
+	left:      54px; /*rtl review*/
+	min-width: 60px; /*extends the hover area to the right so we can move diagonally to the where tab. Not needed if we do open onclick*/
+	cursor:    move;
+}
+
+body.rtl #wx-jump {
+	left:  auto;
+	right: 54px;
+}
+
+#wx-jump .wx-tabs .dashicons {
+	color:          #298cba;
+	font-size:      90%;
+	vertical-align: bottom;
+	font-weight:    bold;
+}
+
+#wx-where-jumpmenu .wx-tabs, #wx-what-jumpmenu .wx-submenu .wx-subtab {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+#wx-jump .wx-tabs {
+	position: relative;
+}
+
+#wx-jumpmenu {
+	display: none;
+}
+
+/*highlight and size items on hover*/
+#wx-jump .wx-tabs:hover,
+#wx-jump .wx-subtab:hover,
+#wx-jump .wx-tabs:hover > span,
+#wx-jump .wx-subtab:hover > span {
+	background-color: #298cba;
+	color:            white !important;
+}
+
+#wx-jump .wx-tabs:hover {
+	padding-top:    13px;
+	padding-bottom: 13px;
+	height:         54px; /* test*/
+}
+
+/*default menu titles styling*/
+#wx-jump .wx-tab-title {
+	background-color: #298cba;
+	text-align:       center !important;
+	font-weight:      bold;
+	color:            white !important;
+	line-height:      25px;
+	border-bottom:    2px solid grey;
+	box-sizing:       border-box;
+	padding:          0px !important;
+	height:           27px; /*test*/
+}
+
+#wx-jump .wx-tab-title#wx-what-title,
+#wx-jump .wx-tab-title#wx-where-title {
+	position:         absolute !important;
+	top:              46px;
+	left:             -54px; /*rtl review*/
+	width:            98px;
+	background-color: grey;
+	border:           1px solid grey;
+	box-sizing:       border-box;
+}
+
+body.rtl #wx-jump .wx-tab-title#wx-what-title,
+body.rtl #wx-jump .wx-tab-title#wx-where-title {
+	left:  auto;
+	right: -54px;
+}
+
+#wx-jump .wx-tab-title#wx-where-title {
+	left: 44px; /*rtl review*/
+}
+
+body.rtl #wx-jump .wx-tab-title#wx-where-title {
+	left:  auto;
+	right: 44px;
+}
+
+/*what and where default menu styling*/
+#wx-what-jumpmenu, #wx-where-jumpmenu {
+	position:         absolute;
+	display:          none;
+	width:            196px;
+	box-shadow:       3px 3px 12px #888888; /*rtl review*/
+	background-color: white;
+	border:           1px solid grey;
+	box-sizing:       border-box;
+	left:             -1px; /*rtl review*/
+	top:              13px;
+}
+
+body.rtl #wx-what-jumpmenu, body.rtl #wx-where-jumpmenu {
+	box-shadow: -3px 3px 12px #888888;
+	left:       auto;
+	right:      -1px;
+}
+
+#wx-where-jumpmenu {
+	left: -99px; /*rtl review*/
+}
+
+body.rtl #wx-where-jumpmenu {
+	left:  auto;
+	right: -99px;
+}
+
+/*what menu defaults: opened and blue tab*/
+#wx-what-jumpmenu {
+	display: block;
+}
+
+#wx-what-title {
+	background-color: #298cba !important;
+}
+
+/*open menu and style title on hover*/
+#wx-what-title:hover #wx-what-jumpmenu {
+	display: block;
+}
+
+#wx-what-title:hover, #wx-where-title:hover {
+	background-color: #298cba !important;
+}
+
+#wx-where-title:hover #wx-where-jumpmenu {
+	display: block;
+}
+
+/*close what menu when on where and set what title to grey bg*/
+#wx-where-title:hover ~ #wx-what-title #wx-what-jumpmenu {
+	display: none !important;
+}
+
+#wx-where-title:hover ~ #wx-what-title {
+	background-color: grey !important;
+}
+
+/*default sub menus styling*/
+.wx-submenu { /* this needs fixed to add a #wx-jump to restrict from other customizer elements. */
+	display:          none;
+	position:         absolute;
+	left:             194px; /*rtl review*/
+	top:              -28px;
+	background-color: white;
+	width:            180px;
+	border:           1px solid grey;
+	box-sizing:       border-box;
+	box-shadow:       3px 3px 12px #888888; /*rtl review*/
+}
+
+body.rtl .wx-submenu {
+	box-shadow: -3px 3px 12px #888888;
+	left:       auto;
+	right:      194px;
+}
+
+/*adjusting sub menu vertical position*/
+#wx-jump .wx-typo,
+#wx-jump .wx-images {
+	top: -55px;
+}
+
+#wx-jump .wx-content {
+	top: -82px;
+}
+
+#wx-jump .wx-custom {
+	top: -244px;
+}
+
+#wx-jump .wx-color {
+	top: -82px;
+}
+
+#wx-jump .wx-visibility {
+	top: -28px;
+}
+
+#wx-jump .wx-spacing {
+	top: -109px;
+}
+
+#wx-jump .wx-style {
+	top: -136px;
+}
+
+#wx-jump .wx-content-area {
+	top: -1px;
+}
+
+#wx-jump .wx-post-specific,
+#wx-jump .wx-sidebars {
+	top: -55px;
+}
+
+#wx-jump .wx-footer,
+#wx-jump .wx-wordpress {
+	top: -109px;
+}
+
+#wx-jump .wx-global {
+	top: -190px;
+}
+
+/*general menu items styling*/
+#wx-jump .wx-tabs,
+#wx-jump .wx-subtab {
+	border-bottom: 2px solid grey;
+	box-sizing:    border-box;
+	padding-left:  5px; /*rtl review*/
+	margin-bottom: 0px;
+	font-weight:   bold;
+	line-height:   25px;
+	color:         black;
+	text-align:    left; /*rtl review*/
+	height:        27px; /* test*/
+}
+
+body.rtl #wx-jump .wx-tabs,
+body.rtl #wx-jump .wx-subtab {
+	text-align:    right;
+	padding-left:  0px;
+	padding-right: 5px;
+}
+
+#wx-jump .wx-tabarrow {
+	line-height: 2;
+	width:       auto;
+	float:       right; /*rtl review*/
+	display:     none;
+}
+
+body.rtl #wx-jump .wx-tabarrow {
+	float:         left;
+	padding-right: 0px;
+	padding-left:  5px;
+}
+
+/*open sub menus on hover*/
+#wx-jump .wx-tabs:hover > ul,
+#wx-jump .wx-tabs:hover .wx-tabarrow {
+	display: block;
+}
+
+#wx-loading {
+	background-image:    url(loading.gif);
+	background-repeat:   no-repeat;
+	background-position: 6px 8px;
+	font-weight:         bold;
+	text-align:          center;
+	background-color:    #ededb0;
+	position:            fixed;
+	top:                 120px;
+	left:                0px;
+	width:               300px;
+	z-index:             50050;
+}

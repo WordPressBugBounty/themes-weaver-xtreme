@@ -1,0 +1,50 @@
+/*
+Theme Name: Weaver Xtreme Child Demo V2
+Theme URI: //weavertheme.com
+Description: Bare minimum Weaver Xtreme Child demo theme
+Author: Bruce Wampler
+Author URI: //weavertheme.com/about
+Version: 2.1
+Tags: theme-options
+Template: weaver-xtreme
+
+
+    This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 2 of the License, or
+	( at your option ) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+About style.css:
+
+Traditionally, a child theme provides its own style.css to override or extend the
+parent style.css. This usually involved adding an "@import" to the child's style.css.
+
+Weaver Xtreme handles the main style sheet differently. It is called "assets/css/style.weaverx.css",
+and is loaded before the theme "style.css" file. Thus, there is no need to "@import" the
+parent stylesheet.
+
+So you can make overrides and extensions directly in this child style.css.
+
+*/
+
+
+
+/*  ------------------------------------------------------
+ Add specific style overrides here...
+  Just for example, this style will change the default BG Color for the site
+  if you remove the comment around the example.
+*/
+body,
+input,
+textarea {
+	/* background-color: #CCC; */
+}

@@ -1,0 +1,22 @@
+#customize-controls .control-section-weaverx-plus-add .accordion-section-title:hover,
+#customize-controls .control-section-weaverx-plus-add .accordion-section-title:focus{
+	background-color: #fff;
+}
+#customize-controls .control-weaverx-plus-add {
+	margin-top: -12px;
+}
+
+.control-section-weaverx-plus-add .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.rtl .control-section-weaverx-plus-add .accordion-section-title .button {
+		margin-left:  0;
+		margin-right: 8px;
+	}
+#customize-controls .control-section-weaverx-plus-add p {
+	margin:0;
+	padding:0;
+}

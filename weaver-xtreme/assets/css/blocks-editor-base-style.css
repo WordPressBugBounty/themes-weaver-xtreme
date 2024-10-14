@@ -1,0 +1,211 @@
+/*---------------------------------------------------------------------------------
+ * Weaver Xtreme Theme - Version 4.4
+ * First created April 2018
+ * License: GNU General Public License v3 or later
+ * License URI: //www.gnu.org/licenses/gpl-3.0.html
+ * Copyright 2018-2019, Bruce E. Wampler
+ *
+ * blocks-editor-base-style.css - Version 4.4
+ *
+ * Provides base styling for Block Editor
+ * Enqueue this style sheet in theme's enqueue_block_editor_assets action.
+ *
+ * This does not style the font-end view, but just the editor.
+ * Front-end base styling for Gutenberg blocks provided by gutenberg-blocks.css
+ *
+ * Note that this file will loaded via the enqueue_block_editor_assets action, which loads
+ * for the editor only
+ *
+ * --------------------------------------------------------------------------------- */
+
+/*
+ * Theme Styles found in Theme main style file
+ *
+ * Rather than loading the entire theme style sheet for the editor, the theme specific
+ * styles relevant to page post content should be duplicated in these styles. Here, they
+ * are mixed in with the .wp-block styles, but prefixed by .edit-post-visual-editor.
+ *
+ */
+
+/* ====== Widths ====== */
+
+/*
+ * Front-end default width set by theme. This comes close to making the editor match the theme's 1100px
+ * width fairly closely on a wide desktop view. ( use width - 100 )
+ *
+ * This width does not account for sidebars, which might make the actual width on the front-end display smaller.
+ */
+
+/* Defaults */
+
+body {
+	font-size: 16px;
+}
+
+/** === Content Width === */
+.wp-block {
+	max-width: 1000px;
+
+}
+
+
+.wp-block[data-align="wide"] {
+	max-width: calc(1000px + 15%);
+}
+
+
+.wp-block[data-align="full"] {
+	max-width:     none;
+	overflow:      hidden;
+	padding-right: 50px;
+}
+
+.wp-block .wp-block {
+	width: 100%;
+}
+
+.editor-inner-blocks .wp-block {
+	margin-bottom: 0 !important;
+	margin-top:    0 !important;
+}
+
+.block-editor-writing-flow { height: auto; }	/* Chrome 77 bug work around */
+
+/** === Title === */
+.editor-post-title {
+	margin-bottom: -15px;
+}
+
+.edit-post-layout .editor-post-title textarea {
+	font-family: inherit;
+}
+
+.editor-post-title__block {
+	font-family:   inherit;
+	margin-top:    0 !important;
+	margin-bottom: 0;
+}
+
+.editor-post-title__block .editor-post-title__input {
+	line-height:    1.25;
+	padding-bottom: 10px;
+}
+
+/* =================== Headings =================== */
+.wp-block-heading, .wp-block-heading h1, .wp-block-heading h2, .wp-block-heading h3,
+.wp-block-heading h4, .wp-block-heading h5, .wp-block-heading h6,
+.mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body h5, .mce-content-body h6 {
+	font-family: inherit;
+}
+
+/* =================== Block Button ================= */
+
+a.wp-block-button__link {	/* default needs to be white */
+	color:		#fff;
+}
+
+/* =================== Block Button ================= */
+.wp-block-cover,
+.wp-block-cover-image {		//* fixes issue with WP 5.5 */
+	padding: 0;
+}
+
+/* =================== Pullquotes =================== */
+
+.wp-block-pullquote {
+	color:        inherit;
+	padding:      0.33em 1.0em 0.33em 1.0em;
+	margin-left:  10px;
+	margin-right: 10px;
+}
+
+.wp-block-pullquote > p, .wp-block-pullquote blockquote p {
+	font-family: inherit;
+	font-style:  normal;
+}
+
+
+/* =================== Preformatted =================== */
+
+/* Overrides to match theme */
+
+.wp-block-preformatted pre {
+	color:               inherit !important;
+	background:          rgba(128, 128, 128, 0.1);
+	border:              1px solid #aaaaaa;
+	border-bottom-color: #cccccc;
+	border-radius:       2px;
+	font-family:         'Inconsolata', monospace;
+	font-size:           .8em;
+	height:              auto;
+	margin:              0;
+	margin-bottom:       1.5em;
+	outline:             none;
+	overflow:            auto;
+	padding:             6px 10px;
+	vertical-align:      middle;
+	width:               100%;
+	word-wrap:           break-word;
+	white-space:         pre-wrap;
+}
+
+.wp-block-verse pre {
+	color:      inherit !important;
+	font-style: normal;
+}
+
+blockquote.wp-block-quote p,
+blockquote.wp-block-quote.is-large p {
+	font-style: normal;
+}
+
+.wp-block-code textarea.editor-plain-text {
+	font-family: 'Inconsolata', monospace;
+	font-size:   0.8em;
+	background:  inherit;
+}
+
+.wp-block-separator:not( .is-style-wide ):not( .is-style-dots ) {
+}
+
+.wp-blockquote p {
+	font-style: normal;
+}
+
+/* Gallery */
+
+.wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+	font-size: inherit; /* bigger than Gutenberg default */
+	color:     #ffffff;
+	padding:   30px 0 5px 0;
+	width:     100%;
+}
+
+.wp-block-gallery img,
+.wp-block-gallery figure {
+	margin: 0 !important;
+	width:  auto;
+}
+
+ul.block-list,
+ol.block-list,
+li.block-list-item {
+	margin-left: 1.5em;
+}
+
+ul.wp-block-gallery {
+	clear: both;
+}
+
+ul.wp-block-gallery,
+ul.wp-block-gallery li {
+	padding: 0;
+}
+
+.wp-block-image figcaption {
+	margin-top:    .1em;
+	margin-bottom: 1em;
+	color:         inherit;
+	text-align:    center;
+	font-size:     inherit;
+}

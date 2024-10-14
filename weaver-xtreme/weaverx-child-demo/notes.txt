@@ -1,0 +1,16 @@
+Some notes on creating a child theme:
+
+1. This directory contains a very minimal example of an Weaver Xtreme Child theme.
+
+2. You can use functions.php to write functions to override any function in the main theme that is wrapped by
+   an "if ( !function_exists( 'func_name' ) )" check. These are known as "pluggable" functions. Many of the original
+   definitions are found in functions.php, but othere are found elsewhere in the code.
+
+3. You can provide a complete replacement for template-type files in the parent. These are files that generate
+   output HTML directly such as 404.php, archive.php, or footer.php. You can tell these mostly because they
+   generate lots of HTML that will make up the final output page, and that many of them are used
+   by the "get_template_part" function. Many of the template files are contained in the theme directory /templates,
+   such as /templates/content-sitemap.php. You can override these template files by including the replacment
+   version in a /templates directory in the child theme.
+
+4. This sample code will work with the Weaver Xtreme Basic theme or the Weaver Xtreme Plus plugin.

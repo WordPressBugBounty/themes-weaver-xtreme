@@ -1,0 +1,1397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress ALL -->
+<html lang='en-US'>
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Weaver Theme Help</title>
+    <style type="text/css">
+body {
+	background: #eeeeee;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 10px; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #ffd;
+}
+
+/* everything about each major block on the site - may be mods in some places */
+
+#container {
+	max-width:800px;
+	background-color: #00CC00;
+}
+#mainContent {
+	background-color: #ffc;
+}
+.oneColFixCtr #container {
+	max-width: 750px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFCD;
+	margin: 0 auto; /* the auto margins ( in conjunction with a width ) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	font-size:12px;
+}
+/* layouts for layout boxes */
+.layoutbox {
+	width:700px;
+	text-align:center;
+	margin:0 25px;
+}
+.l_layout {
+	display:block;
+	width:140px;
+	height:110px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	display:inline;
+	border:1px solid #888;
+	color:black;
+	text-align:center;
+	font:15px arial, sans-serif;
+}
+.l_layout span {
+	display:block;
+}
+.l_header {
+	width:140px;
+	height:20px;
+	background:#CCF;
+	line-height:20px;
+}
+.l_content {
+	width:100px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_contentcenter {
+	width:60px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_content2 {
+	width:80px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_contentw {
+	width:140px;
+	height:70px;
+	background:beige;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_stdbar {
+	width:40px;
+	height:70px;
+	float:left;
+	display:inline;
+}
+.l_widebar {
+	width:60px;
+	height:70px;
+	float:left;
+	display:inline;
+}
+.l_righttop {
+	width:40px;
+	height:20px;
+	background:#FE8;
+	float:left;
+	display:inline;
+	line-height:20px;
+}
+.l_righttopwide {
+	width:60px;
+	height:20px;
+	background:#FE8;
+	float:left;
+	display:inline;
+	line-height:20px;
+}
+.l_rightup {
+	width:40px;
+	height:25px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:25px;
+}
+.l_rightright {
+	width:40px;
+	height:50px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_rightdown {
+	width:40px;
+	height:25px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:25px;
+}
+.l_leftleft {
+	width:40px;
+	height:70px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:70px;
+}
+.l_leftshort {
+	width:30px;
+	height:50px;
+	margin:0;
+	background:#AFA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_skinny {
+	width:30px;
+	height:50px;
+	margin:0;
+	background:#FAA;
+	float:left;
+	display:inline;
+	line-height:50px;
+}
+.l_footer {
+	clear:left;
+	width:140px;
+	height:20px;
+	background:#DDF;
+	color:#000;
+	line-height:20px;
+}
+h4 {
+	font-weight: bold;
+	font-style:italic;
+	color: #000066;
+	text-decoration: underline;
+}
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+h2 {
+	font-size: large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+	margin-top: 40pt;
+}
+h1 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+.codebox {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10px;
+	font-style: normal;
+	background-color: #E8E8E8;
+	margin: 10px;
+	padding: 4px;
+	border: 1px solid #333333;
+	color: #000000;
+	width: 80%;
+}
+.attrs {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color:#000000;
+	text-decoration: none;
+}
+.css {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 9pt;
+	font-style: normal;
+}
+.box {
+	color: #000000;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px;
+	border: thin solid #000000;
+}
+.nospace {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.style3 {
+	font-family: "Courier New", Courier, monospace
+}
+.style4 {
+	font-family: monospace
+}
+.style6 {
+	color: #990000;
+	font-style: italic;
+}
+.style7 {
+	color: #CC3300;
+	font-weight: bold;
+}
+.code1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	font-style: italic;
+}
+.red-highlight {
+	color: #CC3300;
+}
+#container {
+	-webkit-hyphens:    auto;
+	-moz-hyphens:       auto;
+	-ms-hyphens:        auto;
+	hyphens:            auto;
+	word-wrap:          break-word;
+}
+</style> </head>
+  <body class="oneColFixCtr">
+    <div id="container">
+      <div id="mainContent"> <a name="top" id="top"></a>
+        <h2><b>Weaver Xtreme Theme API Documentation -- Version 1.0</b> </h2>
+        <h4>&nbsp;</h4>
+<h3>Table of Contents</h3>
+        <ul style="line-height:1.7em;">
+          <li><a href="#get_started"><strong>How to get started</strong></a></li>
+          <ul>
+            <li><a href="#multisite">Using With WordPress Multisite</a></li>
+          </ul>
+          <li><strong><a href="#HelperClasses">Weaver Xtreme Helper Classes</a></strong></li>
+          <li><strong><a href="#styling-hints">Styling Hints</a></strong><br />
+            <ul>
+              <li><a href="#style-titles">Styling Titles</a></li>
+            </ul>
+          </li>
+          <li><a href="#WeaverII"><strong>Weaver Xtreme Plus</strong></a></li>
+          <li><a href="#Shortcodes"><strong>Shortcodes</strong></a></li>
+          <li><strong><a href="#SaveRestore">Save/Restore Themes</a></strong></li>
+          <li><strong><a href="#PageTemplates">Weaver Page Templates</a></strong></li>
+          <ul>
+            <li><a href="#PerPostTemplate">Settings for "Page with Posts"
+                Template</a></li>
+            <li><a href="#TweakSiteMap">Tweaking the SiteMap page template</a></li>
+          </ul>
+          <li><a href="#editstyling"><strong>Post/Page Editor Styling</strong></a>
+          </li>
+          <li><a href="#raw_html"><strong>Entering Raw HTML and Scripts </strong></a>
+          </li>
+          <li><a href="#post_formats"><strong>Post Formats</strong></a> </li>
+          <li><strong><a href="#CustomMenus">Custom Menus</a></strong></li>
+          <li><a href="#custom-messages"><strong>Custom User Interface Messages</strong></a></li>
+          <li><strong><a href="#plugins">Built-in Support for Other Plugins</a></strong><br />
+                Woocommerce, WP PageNavi</li>
+          <li><strong><a href="#quickcache">Compatible Caching Plugins</a></strong></li>
+          <li><strong><a href="#language_support">Using Weaver in your language</a></strong></li>
+          <li><strong><a href="#ie">Internet Explorer Compatibility</a></strong></li>
+          <li><strong><a href="#TechNotes">Technical Notes</a></strong></li>
+          <li><strong><a href="#EUCookies">EU/UK Cookie Information</a></strong></li>
+          <li><strong><a href="#divhierarchy">Weaver Xtreme
+                HTML&lt;div&gt;Hierarchy</a></strong></li>
+          <li><a href="#ClassReference"><strong>Weaver Xtreme Class Reference</strong></a></li>
+          <li><a href="#switch-wii"><strong>Switching from Weaver II</strong></a></li>
+          <li><strong><a href="#Version1_0">Release Notes</a></strong></li>
+        </ul>
+        <p> </p>
+        <p>This document is a reference to all the internal details of the Weaver Xtreme Theme rendering engine.</p>
+        <p>This includes:</p>
+        <ol>
+          <li>Rough &lt;div&gt; layout overview</li>
+          <li>Classes used</li>
+          <li>Filters</li>
+          <li>Actions</li>
+          <li>Pluggable functions</li>
+          <li>Option values</li>
+        </ol>
+<p>One key to learning how to build child themes or custom option interfaces for <em>Weaver
+            Xtreme</em> is to understand how the various parts of the site are
+          organized. Not surprisingly, <em>Weaver Xtreme</em> relies heavily on
+          the basics of HTML &lt;div&gt;s and the "Cascading" part of CSS. Most
+          of the theme options are based on this cascading layout, and organized
+          accordingly. The following diagram illustrates the cascading nesting
+          of the <em>Weaver Xtreme</em> design.</p>
+        <p>  </p>
+        <div style="background:white;border:1px solid black;padding:10px;">body
+          <div style="background:#F8F8F8;border:1px solid red;padding:10px;">#wrapper
+            - wraps entire site - no content
+            <div style="background:#F0F0F0;border:1px solid blue;">#header -
+              header image, header widget area, HTML insertion<br />
+              <br />
+              <div style="background:#E8E8E8;border:1px solid green;">.menu-primary
+                - primary menu</div>
+            </div>
+            <div style="background:#F0F0F0;border:1px solid blue;margin-top:4px;padding:5px;">#container
+              - wraps infobar, content and main sidebars
+              <div style="background:#E0E0E0;border:1px solid red;margin-top:2px;margin-bottom:4px;">#infobar
+                - breadcrumbs, other info</div>
+              <div>
+                <div style="background:#E8E8E8;border:1px solid green;width:74%;float:left;height:220px;">#content
+                  - the main content - posts and pages </div>
+                <div style="background:#E8E8E8;border:1px solid red;width:25%;float:right;margin-bottom:5px;height:90px;">
+                  #primary-widget-area<br />
+                  widgets<br />
+                  <br />
+                  6 different layouts </div>
+                <div style="background:#E8E8E8;border:1px solid red;width:25%;float:right;height:100px;">#secondary-widget-area<br />
+                  widgets </div>
+              </div>
+              <div style="clear:both;"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <div style="background:#F8F8F8;border:1px solid green;height:50px;">#colophon
+              - footer widget area, HTML insertion, copyright line</div>
+          </div>
+        </div>
+        <!-- body -->
+        <p>The main options for the #wrapper and #container areas are found on
+          the <span class="code1">Weaver Xtreme Main Options : Wrapping Areas</span>
+          tab. The options for the #header are on the <em>Header</em> tab, and
+          the options for the #colophon are on the <em>Footer</em> tab. Options
+          for the Menus are on the Menus tab. There are two tabs to cover Page
+          and Post Content: <span class="code1">Content Areas</span> and <span
+            class="code1">Post
+            Specifics</span>. Normally, Posts will inherit the settings from the
+          Page options, but various Post specific options are available on the
+          separate tab. The general layout and behavior of the content area and
+          the sidebar areas is controlled by the <span class="code1">Sidebars
+            &amp; Layout</span> tab. If you remember the main layout nesting
+          above, and the options found on these specific tabs, you will be well
+          on your way to effectively designing with <em>Weaver Xtreme</em>. </p>
+        <p><em>Weaver Xtreme</em> includes its own translation files for over 20
+          languages. There are about 100 visitor side messages, and it is fairly
+          simple to create a <em>Weaver Xtreme</em> translation file for new
+          languages. If you create your own new translation file, we would be
+          happy to include it in the official <em>Weaver Xtreme</em>
+          distribution.</p>
+        <p>It is easy to design your own site look. You can start with one of
+          many pre-defined subthemes, and change the settings to meet your
+          needs. It is easy to get started: you just have to pick colors and
+          click on check marks.</p>
+        <p>For more advanced developers, there a many options for fine tuning.
+          These include custom CSS, options to add HTML to various areas of the
+          screen, and several ways to display posts in places other than the
+          standard blog page.</p>
+<p><strong>Directory Macro Replacement for CSS images</strong></p>
+        <p>Sometimes you might want to add a background image to a style ( e.g.,
+          using a url( ) value ). Those images need to be stored someplace
+          available to visitors to your site. One typical place is to use the
+          WordPress media gallery, and use the full URL to those images.</p>
+        <p>Because you might be building a child theme, or an Add-on Subtheme, <em>Weaver
+            Xtreme Plus</em> provides a handy macro replacement capability for
+          Custom CSS Rules and CSS+ rules. For example, if you want to supply
+          some background images for a child theme, and you would like to save
+          those images in a directory called /images in the child theme
+          directory, you can use the macro %stylesheet_directory% in a style
+          url( ) value.</p>
+        <p>For example, say you've built a child weaver theme, and have a file
+          called content-bg.jpg stored in the child theme's /images directory.
+          You can specify the location of that file in a site independent manner
+          by using:</p>
+        <p>#content {background-image:
+          url( %stylesheet_directory%images/content-bg.jpg );}</p>
+        <p>The %stylesheet_directory% will be replaced in the generated CSS code
+          as</p>
+        <p>url( /wp-content/themes/your-child-theme/images/content-bg.jpg )</p>
+        <p>The file directory macros supported by <em>Weaver Xtreme</em> will
+          produce a root-relative path, and include the trailing /. Using a
+          root-relative path eliminates issues with http and https protocols,
+          and will be site independent. The following macro values are
+          supported:</p>
+        <p>%template_directory% - the main theme directory. If the theme is a
+          child theme, this will be the directory of the parent theme ( so
+          /weaver-xreme/ ).</p>
+        <p>%stylesheet_directory% - the directory of the theme's stylesheet -
+          thus if it is a child theme, then this will be the child theme's
+          directory.</p>
+        <p>%dendrologicals% - the directory where <em>Weaver Xtreme</em> loads
+          Add-on Subthemes. Add-on Subthemes are available for download from
+          WeaverTheme.com, and are loaded in the /uploads/weaver x-subthemes/add
+          on-subthemes/ directory. This value is useful for providing images
+          with Add-on Subthemes.</p>
+        <h2>&nbsp;</h2>
+<h4>&nbsp;</h4>
+        <h3><a name="ActionsFilters" id="ActionsFilters"></a>Actions and Filters</h3>
+        <p>This block lets you add arbitrary PHP code to your site. This main
+          purpose of this feature is to allow you to add WordPress Actions and
+          Filters for plugins and many standard WordPress actions and filters.
+          This is a very advanced option, and some understanding of PHP code and
+          how WordPress actions and filters work is expected.</p>
+        <p>Technically, any PHP code you add here will be executed at the very
+          beginning of the theme's header.php template file. This file does not
+          get loaded and executed until the core WordPress engine has loaded the
+          main theme files ( e.g., functions.php ), so it will be too late to add
+          actions or filters for many WordPress options. But any actions or
+          filters used to generate content of a page can be added at this point
+          of execution. However, the code can <em>not</em> be used to override
+          pluggable functions in the theme's functions.php file.</p>
+        <p>You can add arbitrary PHP code here, but normally this code will just
+          be add_action and add_filter calls, plus supporting function
+          definitions. You can probably add enqueue_style and enqueue_script
+          functions as well, as those functions are typically used later in the
+          header.php file.</p>
+        <p>The code you define is executed using the PHP eval( ) function.<em>
+            Any PHP errors will cause failure of the site to load properly.</em>
+          Specifically, you should <strong>NOT</strong> wrap the code with
+          &lt;?php at the beginning and ?&gt; at the end. You can use them
+          within the code as needed.</p>
+        <h3>&nbsp;</h3>
+<h2><a name="HelperClasses" id="HelperClasses"></a>Weaver Xtreme Helper
+          Classes</h2>
+        <p><em>Weaver Xtreme</em> provides quite a few helper classes that can
+          be used to help style your content. You can used these in the any of
+          the PlusHere's a short summary.</p>
+        <ul>
+          <li>.aligncenter, .alignleft, .alignright - used to align an element
+            as described</li>
+          <li>.content-2-col,.content-2-col-left, .content-2-col-right - used to
+            display two column content</li>
+          <li>.clearfix - use in a &lt;div&gt; after the column classes to reset
+            for normal display</li>
+          <li>#page-top, #page-bottom - defined on every page as &lt;a&gt; links
+            at top and bottom of page, link using ↑ and ↓ to the opposite
+            link/anchor. Display hidden by default, so use custom CSS to display
+            these links.</li>
+          <li>.post-even, .post-odd, .post-order-nn - <em>Weaver Xtreme</em>
+            adds these class names to every post displayed on a blog page. You
+            can use these class names to create custom css styling for posts -
+            like adding a different background for even and odd posts, or to
+            display something for a specific numbered post on each page. ( The nn
+            starts at 1 on each blog page, and starts over at 1 if your posts
+            are paged. ) </li>
+          <li>#comment-title.no-comments-made - .no-comments-made is added to
+            the #comments-title &lt;div&gt; if no comments have been made yet.</li>
+          <li>.show-desktop - show on devices; add these classes to show or hide
+            by device<br />
+            .show-mobile <br />
+            .show-smalltablet <br />
+            .show-phone</li>
+          <li>.hide-desktop - hide on devices<br />
+            .hide-mobile<br />
+            .hide-smalltablet<br />
+            .hide-phone</li>
+          <li>.is-desktop - prefix selectors to make rules apply on specific
+            devices<br />
+            .is-mobile ( either small-tablet or phone )<br />
+            .is-smalltablet - note: many phones will be considered smalltablet
+            when in landscape view<br />
+            .is-phone - usually when in portrait mode only<br />
+            .is-ios - an iOS device: iPhone, iPod, iPad<br />
+            .is-ipad - an iPad<br />
+            .is-ipod - an iPod<br />
+            .is-iphone - an iPhone<br />
+            .is-android - any Android device<br />
+            .is-windows - any Windows OS<br />
+            .is-macos - any Mac OS<br />
+          </li>
+          <li>.clear-both - add to clear floating, useful with at end of content
+            column classes</li>
+          <li>.border - add the standard border around area<br />
+            .border-bottom </li>
+          <li>.shadow-1 - wrap div with shadows, number is thickness<br />
+            .shadow-2<br />
+            .shadow-3<br />
+            .shadow-4<br />
+            .shadow-rb - shadow on right and bottom<br />
+            .shadow-lb - left an bottom<br />
+            .shadow-tl - top and left<br />
+            .shadow-tr - top and right</li>
+          <li>.rounded - rounded corners on area - only works if border or bg
+            color specified<br />
+            .rounded-top<br />
+            .rounded-bottom<br />
+            .rounded-right<br />
+            .rounded-left </li>
+          <li>.overflow-visible - allow content overflow of area to be visible<br />
+            .overflow-hidden - hide overflow</li>
+          <li>.smooth-transition - adds smooth transition effect when content is
+            displayed</li>
+        </ul>
+        <h3><a name="styling-hints" id="styling-hints"></a>Styling Hints</h3>
+        <p>The following section has various styling hints, including
+          specification of classes that can be used for custom styling.</p>
+        <h3><a name="style-titles" id="style-titles"></a>Styling Titles</h3>
+        <p>The <em>Weaver Xtreme</em> title options have been designed for a
+          uniform appearance. There are really two kinds of titles used on pages
+          - the title of the page, and the title of posts displayed on various
+          pages. The default Blog page does not have a page title, and the title
+          of a post displayed on the Single Page View is displayed just like a
+          regular page. The informative title included on archive-like pages
+          will normally be styled like Page titles, but there are options on the
+          Content Areas tab to customize those.</p>
+        <p>You can also customize any title on any kind of page with these
+          classes:</p>
+        <h4>Title for Page-like pages: ( Standard Page, Attachment, 404 ):</h4>
+        <p> <em>All the same ( the default ):</em><br />
+              <span class="css">.page-title {}</span><br />
+          <br />
+          <em>Just Pages</em>:<br />
+             <span class="css"> .page .page-title {}</span><br />
+          <strong><br />
+            Standard Page titles:</strong><br />
+          <br />
+             <span class="css"> .page .page-title {}</span><br />
+          <strong><br />
+            Attachment:</strong><br />
+              <span class="css">.attachment .page-title{}</span><br />
+          <br />
+          <strong>404:</strong><br />
+             <span class="css">.error404 .page-title {}</span><br />
+          <br />
+          <strong>The Post Single View Page</strong> (Default is same styling as
+          standard Pages )<br />
+          <br />
+              <span class="css">.title-single {}</span><br />
+                -or-<br />
+              <span class="css">.single-post .page-title {}</span><br />
+        </p>
+        <h4>Non-blog Archive-like pages</h4>
+        <p><strong>Tag archives:</strong><br />
+              <span class="css">.title-tag {} /* title of tag archive page */</span><br />
+                -or-<br />
+              <span class="css">.tag .page-title {}</span><br />
+          <br />
+             <span class="css"> .tag .post-title {} /* post titles on the .tag
+            page */</span></p>
+        <p>    <span class="css">.archive .post-title{} /* post titles on ANY
+            archive-like page */</span><br />
+          <br />
+          <strong>Category archives:</strong><br />
+              <span class="css">.title-category {}  /* title of category
+            archive */</span><br />
+                -or-<br />
+              <span class="css">.category .page-title {}</span><br />
+          <br />
+              <span class="css">.category .post-title {} /* post titles on
+            category archive */</span><br />
+          <br />
+          <strong>Date archives</strong>:<br />
+             <span class="css"> .title-archive {}</span><br />
+               -or-<br />
+              <span class="css">.date .page-title {}</span><br />
+          <br />
+              <span class="css">.date .post-title{} /* post titles on date
+            archives */</span><br />
+          <br />
+          <strong>Search:</strong><br />
+             <span class="css"> .title-search {}</span><br />
+               -or-<br />
+              <span class="css">.search-results .page-title {}</span><br />
+          <br />
+              <span class="css">.search-results .post-title {}</span><br />
+          <br />
+          <strong>Author:</strong><br />
+             <span class="css"> .title-author {}</span><br />
+               -or-<br />
+              <span class="css">.author .page-title {}</span><br />
+          <br />
+              <span class="css">.author .post-title {}</span><br />
+          <br />
+          <strong>Page With Posts:</strong><br />
+          <br />
+          <span class="css">.weaverx-page-pwp .page-title {}</span><br />
+          <br />
+          <span class="css">.weaverx-page-pwp .post-title {}</span> </p>
+        <p> </p>
+        <h2>&nbsp;</h2>
+<h2><a name="PageTemplates" id="PageTemplates"></a>Weaver Page Templates</h2>
+        <p>&nbsp;</p>
+<h3><a name="custom-messages" id="custom-messages"></a>Custom User
+          Interface Messages</h3>
+        <p>A request we often get is the ability to customize user interface
+          messages such as "Reply", "Previous/Next Post", and others. Weaver
+          Xtreme now provides the ability to do this using standard WordPress
+          filters. This section will list all the available filters to modify
+          User Interface messages.</p>
+        <p>Note that some values, such as the "Continue Reading" message already
+          have a built-in option due to popular demand. These messages can be
+          changed either with a filter, or using the option.</p>
+        <p>These filters can't be added directly by<em> Weaver Xtreme</em>, but
+          are easily added using the new <em>Weaver Xtreme </em>&lt;HEAD&gt;
+          Section <strong>Actions and Filters</strong> option provided by the <em>Weaver
+            Xtreme Plus</em> plugin.</p>
+        <p> For example, to replace the built in Older/Newer Blog Navigation
+          messages, add these filters to the<strong> Actions and Filters</strong>
+          box:</p>
+        <p class="code1">/* Add filters to change the Older Blog Navigation
+          messages */<br />
+          add_filter( 'weaverx_older_posts','wx_older_posts' );<br />
+          function wx_older_posts( $older ) {<br />
+              return 'Back!';<br />
+          }<br />
+        </p>
+        <p>The original message, including wrapping HTML for many strings, will
+          be passed in to the filter using the single parameter. You can return
+          whatever string you want, including your own HTML wrapping and
+          styling. You have total flexibility in what message comes out. You
+          would define similar filters for any of the following defined <em>Weaver
+            Xtreme</em> filters.</p>
+        <p>Filters labeled with ( %s ) mean that the subject of the title ( mostly
+          archive page titles ) will be used in place of the %s. If you want the
+          extra title info, then you need to include the %s in your filter
+          replacement. Technically, the title uses sprintf to add the specific
+          information to the main title. For example, the tag archive default
+          title is "Tag Archives: %s". The tag name will be filled in to the %s
+          position - "Tag Archives: Post Formats".</p>
+        <p>If you don't know PHP programming, join the crowd! But it isn't that
+          hard to simply use the above example to create your own custom message
+          text for the various elements described in the list below. For
+          example, suppose you want to change the text on the "Post Comment"
+          button for comments. It is a pretty easy 4 step process - you can
+          repeat for any of the filters listed below changing to appropriate
+          names.</p>
+        <ol>
+          <li> Copy the above example into the Actions and Filters box.</li>
+          <li> Change the 'weaverx_older_posts' to 'weaverx_post_comment_form'.</li>
+          <li> Change the 'wx_older_posts' to 'wx_post_comment_form'. </li>
+          <li>Finally, change the 'Back!' to whatever you want.</li>
+        </ol>
+        <p><strong>User interface message filters supported</strong></p>
+        <ol>
+          <li>'weaverx_older_posts', 'weaverx_newer_posts' - replace the
+            Older/Newer and Previous/Next Blog Navigation Style for navigating
+            blog posts.</li>
+          <li>'weaverx_more_message' - the Continue Reading message ( already has
+            built-in option )</li>
+          <li>'weaverx_tag_archives' - page title for tag archives ( %s )</li>
+          <li>'weaverx_404_title' - page title for 404 page</li>
+          <li>'weaverx_yearly_archives', 'weaverx_monthly_archives',
+            'weaverx_daily_archives' - archive page title ( %s )</li>
+          <li>'weaverx_author_archives' - Author Archive page title ( %s )</li>
+          <li>'weaverx_category_archives' - Category Archives page title ( %s )</li>
+          <li>'weaverx_search_results' - Search results page title ( %s )</li>
+          <li>'weaverx_comments_title' - Title of comments section</li>
+          <li>'weaverx_newer_comments', 'weaverx_older_comments' - Older/Newer
+            comments links</li>
+          <li>'weaverx_leave_reply_blog' - Leave a reply ( blog page version )</li>
+          <li>'weaverx_reply_1' - Original: ''&lt;b&gt;1&lt;/b&gt; Reply' ( blog
+            page version )</li>
+          <li>'weaverx_reply_many' - Original '&lt;b&gt;%&lt;/b&gt; Replies' ( %
+            replaced by number of replies ) ( blog page version )</li>
+          <li>'weaverx_leave_reply_form' - Leave a Reply message on comment form</li>
+          <li>'weaverx_cancel_reply_form' - Cancel Reply message on comment form</li>
+          <li>'weaverx_post_comment_form' - Post Comment button on comment form</li>
+          <li>'weaverx_site_title' - The site title</li>
+          <li>'weaverx_tagline' - Site tagline</li>
+        </ol>
+        <p>The strings associated with the Post top and bottom Meta information
+          lines are not suitable for this type of filtering due to some
+          technical limitations. The <em>Weaver Xtreme Plus</em> plugin
+          provides the Custom Post Info Lines option to create custom wording
+          and layout for these lines.</p>
+<h2><a name="divhierarchy" id="divhierarchy"></a>Weaver HTML &lt;div&gt;
+      Hierarchy</h2>
+        <p>The Weaver theme generates content that is wrapped in HTML
+          &lt;div&gt;'s with a set of conventional names. A typical site page
+          will have the following hierarchy. Knowing this can help you make
+          additional custom modifications. ( Another useful thing to do is to use
+          the "View Document Source" option of your web browser to see the
+          actual HTML generated by WordPress for your site content. ) This
+          example is a standard page with a Right Sidebar layout. The locations
+          of the sidebar areas will differ for different layouts. Moving the
+          menu by options will change where it is located. ( <em>Important note:
+            the names and order of these &lt;div&gt;'s have changed
+            significantly since Weaver II!</em> )</p>
+        <pre class="codebox">body
+    #inject_prewrapper
+    #wrapper                        - wraps whole site
+
+        #header                     - wraps everything in the header
+            #inject_header          - right after #header start
+            .menu-secondary          - secondary menu ( top ) ( .menu-secondary.wvrx-menu-wrap )
+            #header-widget-area     - the header widget area
+            #branding               - the header area
+            .title-tagline{-over}   - wraps #site-title and #site-tagline
+                #site-title span    - site title
+                #header-search      - the search button
+                #site-tagline       - the site tagline
+                #nav-header-mini    - header mini menu
+            #header-image           - the header image
+            #header-html            - the header HTML area
+            .menu-primary            - primary menu ( bottom ) ( .menu-primary.wvrx-menu-wrap )
+
+        #container                  - wraps infobar, content, sidebars
+            #infobar                - info bar, if after menu bar
+            #primary-widget-area    - the primary widget area ( if stacked layout )
+            #content                - wraps page or post content
+                #?-top-widget-area  - the various top widget areas
+                #nav-above          - Previous/Next for blog pages
+                &lt;article&gt;           - page or post content
+                #nav-below          - Previous/Next for blog pages
+                #?-bottom-widget-area - various bottom widget areas
+            #primary-widget-area    - the primary widget area ( if non-stacked layout )
+            #secondary-widget-area  - the secondary widget area ( always after content )
+
+        #inject_prefooter
+        #colophon                   - the footer area
+            #footer-widget-area     - wraps footer widget areas
+            #footer-html            - the footer HTML area
+            #site-ig-wrap           - wraps footer bottom line
+                #site-info          - copyright
+                #site-generator     - powered by
+    #inject_postfooter              - last thing, outside #wrapper
+    </pre>
+        <p> </p>
+        <h4>Different kinds of Pages - HTML </h4>
+        <pre><i>&lt;!-- **** Example Page HTML  **** --&gt;</i>
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"page page-id-146 page-template-default singular weaverx-page-page weaverx-sb-right"</b><b>&gt;</b>
+    ...
+<b>&lt;</b><b>div</b> id<i>=</i><b>"content"</b> role<i>=</i><b>"main"</b> class<i>=</i><b>"layout-styles"</b><b>&gt;</b>
+    <b>&lt;</b><b>article</b> id<i>=</i><b>"post-146"</b> class<i>=</i><b>"post-146 page type-page content-page"</b><b>&gt;</b>
+        <b>&lt;</b><b>header</b> class<i>=</i><b>"page-header"</b><b>&gt;</b>
+            <b>&lt;</b><b>h1</b> class<i>=</i><b>"page-title "</b><b>&gt;</b>Lorem Ipsum<b>&lt;/</b><b>h1</b><b>&gt;</b>
+        <b>&lt;/</b><b>header</b><b>&gt;</b><i>&lt;!-- .page-header --&gt;</i>
+        <b>&lt;</b><b>div</b> class<i>=</i><b>"entry-content"</b><b>&gt;</b>
+            <b>&lt;</b><b>p</b><b>&gt;</b>Lorem ipsum dolor sit amet.<b>&lt;/</b><b>p</b><b>&gt;</b>
+        <b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- .entry-content --&gt;</i>
+    <b>&lt;/</b><b>article</b><b>&gt;</b><i>&lt;!-- #post-146 --&gt;</i>
+<b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- /#content --&gt;</i>
+    ...
+<b>&lt;/</b><b>body</b><b>&gt;</b>
+
+
+<i>&lt;!-- **** example default Blog Page ( as Home page ) **** --&gt;</i>
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"home blog weaverx-page-blog weaverx-sb-right"</b><b>&gt;</b>
+    ...
+<b>&lt;</b><b>div</b> id<i>=</i><b>"content"</b> role<i>=</i><b>"main"</b> class<i>=</i><b>"layout-styles"</b><b>&gt;</b>
+    <b>&lt;</b><b>nav</b> id<i>=</i><b>"nav-above"</b><b>&gt;</b>
+		<b>&lt;</b><b>div</b> class<i>=</i><b>"nav-previous"</b><b>&gt;</b><b>&lt;</b><b>a</b> href<i>=</i><b>"http://example.com/page/2/"</b> <b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"meta-nav"</b><b>&gt;</b>&amp;larr;<b>&lt;/</b><b>span</b><b>&gt;</b>
+Older posts<b>&lt;/</b><b>a</b><b>&gt;</b><b>&lt;/</b><b>div</b><b>&gt;</b>
+		<b>&lt;</b><b>div</b> class<i>=</i><b>"nav-next"</b><b>&gt;</b><b>&lt;/</b><b>div</b><b>&gt;</b>
+	<b>&lt;/</b><b>nav</b><b>&gt;</b><b>&lt;</b><b>div</b> style<i>=</i><b>"</b><b>clear</b><i>:</i>both<b>"</b><b>&gt;</b><b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- #nav-above --&gt;</i>
+    <b>&lt;</b><b>article</b> id<i>=</i><b>"post-1241"</b> class<i>=</i><b>"post-1241 post type-post format-standard category-uncategorized</b>
+<b>        tag-template content-default post-area post-odd post-order-1 "</b><b>&gt;</b><i>&lt;!-- POST: standard --&gt;</i>
+
+        <b>&lt;</b><b>header</b> class<i>=</i><b>"entry-header"</b><b>&gt;</b>
+            <b>&lt;</b><b>h2</b> class<i>=</i><b>"post-title "</b><b>&gt;</b><b>&lt;</b><b>a</b> href<i>=</i><b>"http://example.com/post-slug/"</b>
+                title<i>=</i><b>"Permalink to Post Slug"</b> rel<i>=</i><b>"bookmark"</b><b>&gt;</b>Post Slug<b>&lt;/</b><b>a</b><b>&gt;</b><b>&lt;/</b><b>h2</b><b>&gt;</b>
+            <b>&lt;</b><b>div</b> class<i>=</i><b>"entry-meta "</b><b>&gt;</b>
+            <b>&lt;</b><b>span</b> class<i>=</i><b>"meta-info-wrap"</b><b>&gt;</b>
+                <b>&lt;</b><b>span</b> class<i>=</i><b>"sep posted-on"</b><b>&gt;</b>Posted on <b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;</b><b>a</b> href<i>=</i><b>"http://example.com/post-slug/"</b> title<i>=</i><b>"7:07 am"</b>
+rel<i>=</i><b>"bookmark"</b><b>&gt;</b>
+                   <b>&lt;</b><b>time</b> class<i>=</i><b>"entry-date"</b> datetime<i>=</i><b>"2012-01-07T07:07:21+00:00"</b><b>&gt;</b>January 7, 2012<b>&lt;/</b><b>time</b><b>&gt;</b><b>&lt;/</b><b>a</b><b>&gt;</b>
+                   <b>&lt;</b><b>span</b> class<i>=</i><b>"by-author"</b><b>&gt;</b> <b>&lt;</b><b>span</b> class<i>=</i><b>"sep"</b><b>&gt;</b> by <b>&lt;/</b><b>span</b><b>&gt;</b> <b>&lt;</b><b>span</b> class<i>=</i><b>"author vcard"</b><b>&gt;</b>
+                    <b>&lt;</b><b>a</b> class<i>=</i><b>"url fn n"</b> href<i>=</i><b>"http://example.com/author/themedemos/"</b> title<i>=</i><b>"View all posts by themedemos"</b>
+                       rel<i>=</i><b>"author"</b><b>&gt;</b>themedemos<b>&lt;/</b><b>a</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b>
+                <b>&lt;/</b><b>span</b><b>&gt;</b><i>&lt;!-- .entry-meta-icons --&gt;</i>
+            <b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- /entry-meta --&gt;</i>
+        <b>&lt;/</b><b>header</b><b>&gt;</b><i>&lt;!-- .entry-header --&gt;</i>
+
+        <b>&lt;</b><b>div</b> class<i>=</i><b>"entry-summary"</b><b>&gt;</b> <i>&lt;!-- EXCERPT, uses entry-content for full post content --&gt;</i>
+            <b>&lt;</b><b>p</b><b>&gt;</b>Lorem ipsum dolor sit amet.
+            <b>&lt;</b><b>a</b> class<i>=</i><b>"more-link"</b> href<i>=</i><b>"http://example.com/post-slug/"</b><b>&gt;</b>
+                <b>&lt;</b><b>span</b> class<i>=</i><b>"more-msg"</b><b>&gt;</b>Continue reading &amp;rarr;<b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>a</b><b>&gt;</b><b>&lt;/</b><b>p</b><b>&gt;</b>
+        <b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- .entry-summary --&gt;</i>
+
+        <b>&lt;</b><b>footer</b> class<i>=</i><b>"entry-utility"</b><b>&gt;</b><i>&lt;!-- bottom meta --&gt;</i>
+            <b>&lt;</b><b>div</b> class<i>=</i><b>"meta-info-wrap"</b><b>&gt;</b>
+            <b>&lt;</b><b>span</b> class<i>=</i><b>"cat-links"</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"entry-utility-prep entry-utility-prep-cat-links"</b><b>&gt;</b>Posted in<b>&lt;/</b><b>span</b><b>&gt;</b>
+                <b>&lt;</b><b>a</b> href<i>=</i><b>"http://example.com/category/uncategorized/"</b> rel<i>=</i><b>"category tag"</b><b>&gt;</b>Uncategorized<b>&lt;/</b><b>a</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b>
+                <b>&lt;</b><b>span</b> class<i>=</i><b>"sep"</b><b>&gt;</b> | <b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"tag-links"</b><b>&gt;</b>
+                <b>&lt;</b><b>span</b> class<i>=</i><b>"entry-utility-prep entry-utility-prep-tag-links"</b><b>&gt;</b>Tagged<b>&lt;/</b><b>span</b><b>&gt;</b>
+                <b>&lt;</b><b>a</b> href<i>=</i><b>"http://example.com/tag/template/"</b> rel<i>=</i><b>"tag"</b><b>&gt;</b>template<b>&lt;/</b><b>a</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b>
+            <b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- .entry-meta-icons --&gt;</i>
+		<b>&lt;/</b><b>footer</b><b>&gt;</b><i>&lt;!-- #entry-utility --&gt;</i>
+        <b>&lt;/</b><b>div</b><b>&gt;</b>
+    <b>&lt;/</b><b>article</b><b>&gt;</b><i>&lt;!-- /#post-1241 --&gt;</i>
+
+    ... more posts ...
+
+    <b>&lt;</b><b>nav</b> id<i>=</i><b>"nav-below"</b><b>&gt;</b>
+		<b>&lt;</b><b>h3</b> class<i>=</i><b>"assistive-text"</b><b>&gt;</b>Post navigation<b>&lt;/</b><b>h3</b><b>&gt;</b>
+		<b>&lt;</b><b>div</b> class<i>=</i><b>"nav-previous"</b><b>&gt;</b><b>&lt;</b><b>a</b> href<i>=</i><b>"http://example.com/page/2/"</b> <b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"meta-nav"</b><b>&gt;</b>&amp;larr;<b>&lt;/</b><b>span</b><b>&gt;</b>
+Older posts<b>&lt;/</b><b>a</b><b>&gt;</b><b>&lt;/</b><b>div</b><b>&gt;</b>
+		<b>&lt;</b><b>div</b> class<i>=</i><b>"nav-next"</b><b>&gt;</b><b>&lt;/</b><b>div</b><b>&gt;</b>
+	<b>&lt;/</b><b>nav</b><b>&gt;</b><i>&lt;!-- #nav-below --&gt;</i>
+<b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- /#content --&gt;</i>
+    ...
+<b>&lt;/</b><b>body</b><b>&gt;</b>
+
+
+
+<i>&lt;!-- **** Example Single Page View **** --&gt;</i>
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"single single-post postid-1241 single-format-standard singular weaverx-page-single weaverx-sb-right"</b><b>&gt;</b>
+    ...
+<b>&lt;</b><b>div</b> id<i>=</i><b>"content"</b> role<i>=</i><b>"main"</b> class<i>=</i><b>"l-content-rsb m-full s-full "</b><b>&gt;</b>
+    ... .nav-previous, .nav-next links ...
+    <b>&lt;</b><b>article</b> id<i>=</i><b>"post-1241"</b> class<i>=</i><b>"post-1241 post type-post format-standard category-uncategorized</b>
+<b>        tag-template content-single post-content post-area "</b><b>&gt;</b>
+    	<b>&lt;</b><b>header</b> class<i>=</i><b>"page-header"</b><b>&gt;</b>
+    	<b>&lt;</b><b>h1</b> class<i>=</i><b>"page-title  title-single "</b><b>&gt;</b>Post Slug<b>&lt;/</b><b>h1</b><b>&gt;</b>
+		<b>&lt;</b><b>div</b> class<i>=</i><b>"entry-meta "</b><b>&gt;</b>
+            ... see blog example for .entry-meta content
+        <b>&lt;/</b><b>div</b><b>&gt;</b><i>&lt;!-- /entry-meta --&gt;</i>
+	<b>&lt;/</b><b>header</b><b>&gt;</b><i>&lt;!-- .page-header --&gt;</i>
+    <b>&lt;</b><b>div</b> class<i>=</i><b>"entry-content"</b><b>&gt;</b>
+    ... see blog post example for .entry-content, .entry-utility
+
+    ...
+<b>&lt;/</b><b>body</b><b>&gt;</b>
+
+
+
+<i>&lt;!-- **** Example Single Page View **** --&gt;</i>
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"attachment page page-id-1711 page-child parent-pageid-1133 page-template-default</b>
+<b>  singular weaverx-page-image weaverx-sb-right"</b><b>&gt;</b>
+    ... remaining similar to other pages ...
+
+
+
+<i>&lt;!-- **** Example Archive-like Views **** --&gt;</i>
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"archive date weaverx-page-archive weaverx-sb-right"</b><b>&gt;</b>   <i>&lt;!-- Date Based Archives --&gt;</i>
+    <b>&lt;</b><b>div</b> id<i>=</i><b>"content"</b> role<i>=</i><b>"main"</b> class<i>=</i><b>"layout-styling"</b><b>&gt;</b>
+        <b>&lt;</b><b>header</b> class<i>=</i><b>"page-header"</b><b>&gt;</b>
+            <b>&lt;</b><b>h1</b> class<i>=</i><b>"page-title  archive-title title-archive"</b><b>&gt;</b><b>&lt;</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"title-archive-label"</b><b>&gt;</b>
+            Monthly Archives: <b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"archive-info"</b><b>&gt;</b>September 2014<b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>h1</b><b>&gt;</b>
+        <b>&lt;/</b><b>header</b><b>&gt;</b>
+        ... posts - same as blog ...
+    <b>&lt;/</b><b>div</b><b>&gt;</b>
+<b>&lt;/</b><b>body</b><b>&gt;</b>
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"archive tag tag-content tag-79 weaverx-page-tag weaverx-sb-right"</b><b>&gt;</b> <i>&lt;!-- Tag archives --&gt;</i>
+    ...
+    <b>&lt;</b><b>header</b> class<i>=</i><b>"page-header"</b><b>&gt;</b>
+        <b>&lt;</b><b>h1</b> class<i>=</i><b>"page-title  archive-title title-tag"</b><b>&gt;</b><b>&lt;</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"title-tag-label"</b><b>&gt;</b>
+        Tag Archives: <b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"archive-info"</b><b>&gt;</b>content<b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>h1</b><b>&gt;</b>
+    <b>&lt;/</b><b>header</b><b>&gt;</b>
+    ...
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"archive category category-markup category-29 weaverx-page-category weaverx-sb-right"</b><b>&gt;</b>
+    ...
+    <b>&lt;</b><b>header</b> class<i>=</i><b>"page-header"</b><b>&gt;</b>
+		<b>&lt;</b><b>h1</b> class<i>=</i><b>"page-title  archive-title title-category"</b><b>&gt;</b><b>&lt;</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"category-title-label"</b><b>&gt;</b>
+        Category Archives: <b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"archive-info"</b><b>&gt;</b>Markup<b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>h1</b><b>&gt;</b>
+        <b>&lt;</b><b>div</b> class<i>=</i><b>"category-archive-meta"</b><b>&gt;</b><b>&lt;</b><b>p</b><b>&gt;</b>Posts in this category test markup tags and styles.<b>&lt;/</b><b>p</b><b>&gt;</b>
+        <b>&lt;/</b><b>div</b><b>&gt;</b>  <i>&lt;!-- shown if tag/category description provided --&gt;</i>
+    <b>&lt;/</b><b>header</b><b>&gt;</b>
+    ...
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"search search-results weaverx-page-search weaverx-sb-right"</b><b>&gt;</b> <i>&lt;!-- Search --&gt;</i>
+    ...
+    <b>&lt;</b><b>header</b> class<i>=</i><b>"page-header"</b><b>&gt;</b>
+        <b>&lt;</b><b>h1</b> class<i>=</i><b>"page-title  archive-title title-search"</b><b>&gt;</b><b>&lt;</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"title-search-label"</b><b>&gt;</b>
+        Search Results for: <b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;</b><b>span</b> class<i>=</i><b>"archive-info"</b><b>&gt;</b>"content"<b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>span</b><b>&gt;</b><b>&lt;/</b><b>h1</b><b>&gt;</b>
+    <b>&lt;/</b><b>header</b><b>&gt;</b>
+    ...
+
+<b>&lt;</b><b>body</b> class<i>=</i><b>"search search-no-results weaverx-page-search weaverx-sb-right"</b><b>&gt;</b> <i>&lt;!-- failed search --&gt;</i>
+    ...
+
+    </pre>
+        <h3><a name="ClassReference" id="ClassReference"></a>Weaver Xtreme Class
+          Reference</h3>
+        <p>This section contains a comprehensive reference to the different HTML
+          areas used by <em>Weaver Xtreme</em>, and the classes used to style
+          those areas.</p>
+        <h4>body</h4>
+        <p>The classes added to the body tag, both by WordPress and by <em>Weaver
+            Xtreme</em>. The list of classes added by WP is not necessarily
+          comprehensive - WP will add more specific classes in various views.</p>
+        <ul>
+          <li>.home - if home page</li>
+          <li>.page - if a regular page</li>
+          <li>.page-id-### - ### is WP's page id</li>
+          <li>.page-child - if this is a child page</li>
+          <li>.page-parent - if this is a parent page</li>
+          <li>.parent-page-id-### - id of parent page</li>
+          <li>.page-template-xxxx - xxxx is the page template</li>
+          <li>.blog - if blog</li>
+          <li>.single - if single view</li>
+          <li>.single-post - if single post page</li>
+          <li>.archive - if an archive-like view of posts</li>
+          <li>.tag - if tag view</li>
+          <li>.category - if category view</li>
+          <li>.date - if date view</li>
+          <li>.search - if a search view</li>
+          <li>.logged-in / .not-logged-in - if user logged in or not</li>
+          <li>.single-author - if site has only one author</li>
+          <li>.singular - if the page is a singular type page</li>
+          <li>.custom-body-class - a class name specified on the per-page
+            options</li>
+          <li>.weaverx-theme-body - this page generated by weaver x</li>
+          <li>.weaverx-page-xxxx - xxxx is a specific page type. Values of xxxx
+            can be:<br />
+            <ul>
+              <li>404</li>
+              <li>archive</li>
+              <li>author</li>
+              <li>category</li>
+              <li>image</li>
+              <li>page</li>
+              <li>page-blank</li>
+              <li>sitemap</li>
+              <li>search</li>
+              <li>single</li>
+              <li>tag</li>
+              <li>woocommerce</li>
+            </ul>
+          </li>
+          <li>.weaverx-sb-xxxx - sidebar layout. Values of xxxx can be:
+            <ul>
+              <li>right</li>
+              <li>right-top</li>
+              <li>left</li>
+              <li>left-top</li>
+              <li>split</li>
+              <li>split-top</li>
+              <li>one-column</li>
+            </ul>
+          </li>
+        </ul>
+        <h4>#wrapper - wraps entire site</h4>
+        <p>The area wraps the entire site, and provides the global width, font,
+          and colors.</p>
+        <h4 class="oneColFixCtr">#header</h4>
+        <dl>
+          <dt>Site Title</dt>
+          <dt> <br />
+          </dt>
+          <dd>#site-title</dd>
+          <dt>Site Title with link</dt>
+          <dd>#site-title a</dd>
+          <dt>Site Tagline</dt>
+          <dd>#site-tagline</dd>
+          <dt>Header Image</dt>
+          <dd>#header-image img</dd>
+          <dt>Header Title, Tagline, Search, Header, Mini Menu</dt>
+          <dd>#branding</dd>
+          <dt>Header Search</dt>
+          <dd>#header-search</dd>
+          <dt>Header Mini-Nav</dt>
+          <dd>#nav-header-mini .menu</dd>
+          <dt>Header HTML Area</dt>
+          <dd>#header-html</dd>
+          <dd> </dd>
+          <dd> </dd>
+          <dt> </dt>
+          <dt> </dt>
+        </dl>
+        <h4>#container</h4>
+        <p>This area wraps the #content and the primary and secondary sidebars.</p>
+        <h4>#colophon</h4>
+        <p>This wraps footer content.</p>
+        <h4>Other Classes</h4>
+        <p>#comment-title.no-comments-made - .no-comments-made is added to the
+          #comments-title &lt;div&gt; if no comments have been made yet. </p>
+
+
+        <h2>Filters Used by Weaver Xtreme Engine</h2>
+        <p>Weaver Xtreme processes some content through filters. Short descriptions of the filters used by Weaver Xtreme follow. It will likely be most instructive to look at the actual source code to better understand some of these filters.</p>
+
+        <h4>weaverx_404_title</h4>
+       	<ul>
+       		 	<li><code>apply_filters( 'weaverx_404_title', wp_kses_post( 'Sorry, no such page.','weaver-xtreme' ) )</code></li>
+          		<li>explain<br />
+	   </li>
+       	</ul>
+<h4>weaverx_options</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_options','weaverx_settings_backup' )</code></li>
+          		<li>This allows a child theme to load an alternate set of settings from the WP options db. The second parameter is the name of the WP option and will be used as the value of get_option( ), etc. The valid values can be: weaverx_settings_backup or weaverx_options. </li>
+       		</ul>
+
+        <h4>weaverx_daily_archives</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_daily_archives', wp_kses_post( 'Daily Archives: %s','weaver-xtreme' ) );</code></li>
+          		<li>Change the message for Daily Archives</li>
+       		</ul>
+
+        <h4>weaverx_monthly_archives</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_monthly_archives', wp_kses_post( 'Monthly Archives: %s','weaver-xtreme' ) );</code></li>
+          		<li>Change message for Monthly Archives</li>
+       		</ul>
+
+        <h4>weaverx_yearly_archives</h4>
+        	<ul>
+   		 	 <li><code>apply_filters( 'weaverx_yearly_archives', wp_kses( 'Yearly Archives: %s','weaver-xtreme' ) )</code></li>
+          		<li>Change message for Yearly Archives</li>
+   		</ul>
+
+        <h4>taxonomy_archive_meta</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'taxonomy_archive_meta', '&lt;div class=&quot;tax-archive-meta&quot;&gt;' . $term_description . '&lt;/div&gt;' )</code></li>
+          		<li>Used to replace a taxonomy archive page description as returned by WP function term_description( ).</li>
+       		</ul>
+
+        <h4>weaverx_author_archives</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_author_archives',  wp_kses( 'Author Archives: %s','weaver-xtreme' ) )</code></li>
+          		<li>Change message for Author Archives</li>
+       		</ul>
+
+        <h4>weaverx_category_archives</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_category_archives', wp_kses( 'Category Archives: %s','weaver-xtreme' ) )</code></li>
+          		<li>Change the message for Category Archives</li>
+       		</ul>
+
+        <h4>category_archive_meta</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'category_archive_meta', '&lt;div class=&quot;category-archive-meta&quot;&gt;' . $category_description . '&lt;/div&gt;' )</code></li>
+          		<li>Used to replace a category archive page description as returned by WP function category_description( ).</li>
+       		</ul>
+
+        <h4>weaverx_comments_title</h4>
+        	<ul>
+       		 	<li><code>echo apply_filters( 'weaverx_comments_title', wp_kses( 'Comments','weaver-xtreme' ) )</code></li>
+          		<li>Replace comments section title</li>
+       		</ul>
+
+        <h4>weaverx_older_comments</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_older_comments', wp_kses( '&amp;larr; Older Comments','weaver-xtreme' ) ) </code></li>
+          		<li>Replace  Older Comments label</li>
+       		</ul>
+
+        <h4>weaverx_newer_comments</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_newer_comments', wp_kses( 'Newer Comments &amp;rarr;','weaver-xtreme' ) )</code></li>
+          		<li>Replace Newer Comments label</li>
+       		</ul>
+
+        <h4>weaverx_reply/comment_form</h4>
+        	<ul>
+       		 	<li>apply_filters( 'weaverx_leave_reply_form', wp_kses( 'Leave a Reply','weaver-xtreme' ) ),<br />
+  apply_filters( 'weaverx_cancel_reply_form', wp_kses( 'Cancel Reply','weaver-xtreme' ) ),<br />
+  apply_filters( 'weaverx_post_comment_form', wp_kses( 'Post Comment','weaver-xtreme' ) )</li>
+          		<li>Change messages for reply/comment form</li>
+       		</ul>
+
+        <h4>weaverx_site_title</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_site_title', get_bloginfo( 'name', 'display' ) )</code></li>
+          		<li>Replace the default site title</li>
+       		</ul>
+
+        <h4>weaverx_tagline</h4>
+        	<ul>
+   		 	 <li><code>apply_filters( 'weaverx_tagline', get_bloginfo( 'description' ) )</code></li>
+          		<li>Replace the default site tagline</li>
+   		</ul>
+
+        <h4>weaverx_attachment_size</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_attachment_size', 'large' )</code></li>
+          		<li>Change the default size for displaying attachment image</li>
+       		</ul>
+
+        <h4>weaverx_older_posts, weaverx_newer_posts</h4>
+        	<ul>
+   		 	 <li><code>apply_filters( 'weaverx_older_posts','<span class="meta-nav">&larr; </span>' . wp_kses( 'Previous Post','weaver-xtreme' ) ) apply_filters( 'weaverx_newer_posts', wp_kses( 'Next Post','weaver-xtreme' ) . '<span class="meta-nav">&rarr; </span>' );</code></li>
+          		<li>Change message for older and newer posts navigation</li>
+   		</ul>
+
+        <h4>weaverx_more_message</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_more_message','Continue reading' )</code></li>
+          		<li>Replace the continue reading message for excerpts</li>
+       		</ul>
+
+        <h4>edit_post_link</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'edit_post_link', 'Edit', $post-&gt;ID )</code></li>
+          		<li>Replace the &quot;Edit&quot; link button for $post-&gt;ID - need to include full &lt;a&gt; code and label.</li>
+       		</ul>
+
+         <h4>weaverx_leave_reply_blog</h4>
+        	<ul>
+   		 	 <li><code>apply_filters( 'weaverx_leave_reply_blog', wp_kses( 'Leave a reply','weaver-xtreme' ) );<br />
+   		 	 </code><code>apply_filters( 'weaverx_reply_1', wp_kses( '<b>1</b> Reply','weaver-xtreme' ) ); <br />
+   		 	 apply_filters( 'weaverx_reply_many', wp_kses( '<b>%</b> Replies','weaver-xtreme' ) );</code></li>
+          		<li>Replace messages for &quot;Leaver a Reply&quot; message for blog meta info lines</li>
+       		</ul>
+
+        <h4>weaverx_posted_on, weaverx_posted_in</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_posted_on',$po, $type )<br />
+       		 	 apply_filters( 'weaverx_posted_in',$po, $type )   		 	   <br />
+       		 	</code></li>
+          		<li>Replace top and bottom post meta-info line ( $po ) for blog posts.</li>
+       		</ul>
+
+        <h4>weaverx_author_bio_avatar_size</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_author_bio_avatar_size', 75 )</code></li>
+          		<li>Change the size if the author avatar in the bio</li>
+       		</ul>
+
+        <h4>weaverx_replace_widget_area</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_replace_widget_area',$area_name )</code></li>
+          		<li>Replace a standard Weaver Xtreme widget area with a different one</li>
+       		</ul>
+
+         <h4>weaverx_menu_name</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_menu_name', $weaverx_menu )</code></li>
+          		<li>Replace the custom menu with a different one. </li>
+       		</ul>
+
+        <h4>weaverx_menu_class</h4>
+        	<ul>
+       		 	<li><code>apply_filters( 'weaverx_menu_class', $class_values, $weaverx_menu )</code></li>
+          		<li>Modify menu class - add or delete classes to specific Weaver Xtreme menus</li>
+       		</ul>
+
+<h4>filtername</h4>
+        	<ul>
+       		 	<li><code>apply_filters</code></li>
+          		<li>explain</li>
+       		</ul>
+
+
+
+        	<h3>Advanced Filters</h3>
+        	<p>The following filters require knowledge of the item format ( usually an array ), and are usually used for Xtreme Plus to add new options. These can be added to a new option interface, but will require an understanding of the underlying code, and usually extra CSS style rules to support. Search the code for these filters to see what they do.</p>
+       	<p>'weaverx_add_font_size', 'weaverx_add_font_family', 'weaverx_add_shadows', </p>
+
+
+        	<h2>Actions Called by Weave Xtreme Engine</h2>
+        <p>Weaver Xtreme calls some actions. Many of these are used to interface with Weaver Xtreme Plus, but these could also be defined by a child theme. Some are specific to a child theme. Short descriptions of the actions by Weaver Xtreme follow. It will likely be most instructive to look at the actual source code to better understand some of these calls.</p>
+
+        <h4>weaverx_child_siteoptions</h4>
+        	<ul>
+       		 	<li><code>do_action( 'weaverx_child_siteoptions' )</code></li>
+          		<li>A child theme can add new options to the botom of the Site Options tab. They can be processed via the 'weaverx_child_process_options' hook.</li>
+       		</ul>
+
+        <h4>weaverx_child_process_options</h4>
+        	<ul>
+       		 	<li><code> do_action( 'weaverx_child_process_options' )</code></li>
+          		<li>Process options supported by a child theme - e.g., added via 'weaverx_child_siteoptions' or other.</li>
+       		</ul>
+
+            <h4>weaverx_child_saverestore</h4>
+        	<ul>
+       		 	<li><code>do_action( 'weaverx_child_saverestore' );</code></li>
+          		<li>Allow additional save/restore in child </li>
+       		</ul>
+
+            <h4>weaverx_child_update</h4>
+        	<ul>
+       		 	<li><code>do_action( 'weaverx_child_update' )</code></li>
+          		<li>Update option settings from child</li>
+       		</ul>
+
+            <h4>weaverx_child_show_extrathemes</h4>
+        	<ul>
+       		 	<li><code> do_action( 'weaverx_child_show_extrathemes' );</code></li>
+          		<li>Allow child to display extra sub-themes.</li>
+       		</ul>
+
+            <h4>weaverx_nav</h4>
+        	<ul>
+   		 	 <li><code>do_action( 'weaverx_nav', $location )</code></li>
+          		<li>Display the top ( secondary ) and bottom ( primary ) menus</li>
+   		</ul>
+
+            <h4>weaverx_post_header</h4>
+        	<ul>
+       		 	<li><code> do_action( 'weaverx_post_header' )</code></li>
+          		<li>Called after the &lt;/header&gt; and bottom ( primary ) menu emitted.</li>
+       		</ul>
+
+            <h4>weaverx_per_page</h4>
+        	<ul>
+       		 	<li><code>do_action( 'weaverx_per_page' )</code></li>
+          		<li>Called right before content is generated for each page. Use to emit per page options.</li>
+       		</ul>
+
+            <h4>weaverx_per_post</h4>
+        	<ul>
+       		 	<li><code> do_action( 'weaverx_per_post', $cur_post_ID )</code></li>
+          		<li>Called before post content emitted. Used for per-post style.</li>
+       		</ul>
+
+
+            <h4>weaverx_breadcrumbs</h4>
+        	<ul>
+       		 	<li><code>do_action( 'weaverx_breadcrumbs' )</code></li>
+          		<li>Called to emit breadcrumbs in infobar.</li>
+       		</ul>
+
+            <h4>weaverx_paginate</h4>
+        	<ul>
+       		 	<li><code>do_action( 'weaverx_paginate' )</code></li>
+          		<li>Called to emit pagination navigation for blog pages ( infobar ).</li>
+       		</ul>
+                <h4>do_action</h4>
+       	<ul>
+       		 	<li><code>do_action</code></li>
+          		<li>explain</li>
+       		</ul>
+
+
+       	<h2>Pluggable functions </h2>
+       	<p>A &quot;pluggable&quot; function is one that can easily be overridden in a child theme.</p>
+
+        <h4>weaverx_setup( )</h4>
+        <ul>
+          		<li>Sets up theme defaults and registers support for various WordPress features.</li>
+       	</ul>
+
+        <h4>weaverx_init_opts( $who='' )</h4>
+        <ul>
+   		 <li>This sets either the current settings, or the default values.</li>
+       	</ul>
+
+        <h4>weaverx_register_header_images( )</h4>
+        <ul>
+   		 <li>Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.</li>
+       	</ul>
+
+        <h4>weaverx_admin_header_style( )</h4>
+        <ul>
+          		<li>Styles the header image displayed on the Appearance &gt; Header admin panel.</li>
+       	</ul>
+
+        <h4>weaverx_register_sidebar( $name, $id, $desc, $altclass='' )</h4>
+        <ul>
+   		 <li>Register widgetized areas</li>
+       	</ul>
+
+        <h4>weaverx_comment( $comment, $args, $depth )</h4>
+        <ul>
+          		<li>Template for comments and pingbacks.</li>
+       	</ul>
+
+        <h4>weaverx_comments_popup_link( )</h4>
+        <ul>
+          		<li>generate comment bubble for posts</li>
+       	</ul>
+
+        <h4>weaverx_content_nav( $nav_id )</h4>
+        <ul>
+   		 <li>Display navigation to next/previous pages when applicable</li>
+       	</ul>
+
+        <h4>weaverx_continue_reading_link( )</h4>
+        <ul>
+   		 <li>Returns a &quot;Continue Reading&quot; link for excerpts</li>
+       	</ul>
+
+        <h4>weaverx_edit_link( $echo = 'echo' )</h4>
+        <ul>
+   		 <li>Generates the &quot;Edit&quot; page/post button</li>
+       	</ul>
+
+        <h4>weaverx_entry_header( $format_title='', $do_excerpt = false )</h4>
+        <ul>
+          		<li>display entry header ( title ) for posts</li>
+       	</ul>
+
+        <h4>weaverx_post_title( $before='', $after='' )</h4>
+        <ul>
+   		 <li>display the post title</li>
+       	</ul>
+
+        <h4>weaverx_link_pages( )</h4>
+        <ul>
+   		 <li>Interface to wp_link_pages - pluggable</li>
+       	</ul>
+
+        <h4>weaverx_not_found_search(  )</h4>
+        <ul>
+   		 <li>Output when search not found</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+        <h4>function</h4>
+        <ul>
+          		<li>explain</li>
+       	</ul>
+
+
+
+         <h4>&nbsp;</h4>
+<p>&nbsp;</p>
+       	<p>&nbsp;</p>
+<h4>&nbsp;</h4>
+<p><em>Weaver Xtreme</em> and this document are © 2010-2014, Bruce E.
+          Wampler. <a ref="http://weavertheme.com">Web Site - WeaverTheme.com</a></p>
+      </div>
+    </div>
+  </body>
+</html>
