@@ -20,7 +20,7 @@ if (have_posts()) { ?>
     <header class="page-header">
         <?php
         // translators: %s is tag archive title
-        $tt = apply_filters('weaverx_tag_archives', __('Tag Archives: %s', 'weaver-xtreme'));
+        $tt = apply_filters('weaverx_tag_archives', esc_html__('Tag Archives: %s', 'weaver-xtreme'));
         $titlew = '<span class="title-tag-label">' . sprintf($tt, '</span><span class="archive-info">'
                 . single_tag_title('', false) . '</span>');
         weaverx_archive_title(wp_kses_post($titlew), 'tag');

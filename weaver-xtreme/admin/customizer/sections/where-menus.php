@@ -18,7 +18,7 @@ function weaverx_customizer_define_w_menus_sections(): array
     $w_menus_sections['w_menus-sec-primary'] = array(
         'panel' => $panel,
         'title' => esc_html__('Primary Menu Bar', 'weaver-xtreme'),
-        'description' => 'Attributes for the Primary Menu Bar (Default Location: Bottom of Header)',
+        'description' => esc_html__('Attributes for the Primary Menu Bar (Default Location: Bottom of Header)','weaver-xtreme'),
         'options' => weaverx_controls_w_menus_primary(),
 
     );
@@ -26,7 +26,7 @@ function weaverx_customizer_define_w_menus_sections(): array
     $w_menus_sections['w_menus-sec-secondary'] = array(
         'panel' => $panel,
         'title' => esc_html__('Secondary Menu Bar', 'weaver-xtreme'),
-        'description' => 'Attributes for the Secondary Menu Bar (Default Location: Top of Header)',
+        'description' => esc_html__('Attributes for the Secondary Menu Bar (Default Location: Top of Header)','weaver-xtreme'),
         'options' => weaverx_controls_w_menus_secondary(),
 
     );
@@ -34,7 +34,7 @@ function weaverx_customizer_define_w_menus_sections(): array
     $w_menus_sections['w_menus-sec-all-menus'] = array(
         'panel' => $panel,
         'title' => esc_html__('Options for All Menus', 'weaver-xtreme'),
-        'description' => 'Menu Bar enhancements and features',
+        'description' => esc_html__('Menu Bar enhancements and features','weaver-xtreme'),
         'options' => weaverx_controls_w_menus_all(),
 
     );
@@ -42,7 +42,7 @@ function weaverx_customizer_define_w_menus_sections(): array
     $w_menus_sections['w_menus-sec-mini-menu'] = array(
         'panel' => $panel,
         'title' => esc_html__('Header Mini Menu', 'weaver-xtreme'),
-        'description' => 'Horizontal "Mini-Menu" displayed right-aligned of Site Tagline',
+        'description' => esc_html__('Horizontal "Mini-Menu" displayed right-aligned of Site Tagline','weaver-xtreme'),
         'options' => weaverx_controls_w_menus_mini(),
 
     );
@@ -51,7 +51,7 @@ function weaverx_customizer_define_w_menus_sections(): array
         $w_menus_sections['w_menus-sec-extra'] = array(
             'panel' => $panel,
             'title' => esc_html__('Extra Menu', 'weaver-xtreme'),
-            'description' => 'Style the [extra_menu] shortcode or Extra Menu Widget (Weaver Xtreme Plus)',
+            'description' => esc_html__('Style the [extra_menu] shortcode or Extra Menu Widget (Weaver Xtreme Plus)','weaver-xtreme'),
             'options' => weaverx_controls_w_menus_extra(),
 
         );

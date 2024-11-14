@@ -15,7 +15,7 @@ function weaverx_customizer_define_w_footer_sections(): array
     $w_footer_sections['w_footer-area'] = array(
         'panel' => $panel,
         'title' => esc_html__('Footer Area', 'weaver-xtreme'),
-        'description' => 'Properties for the footer area.',
+        'description' => esc_html__('Properties for the footer area.','weaver-xtreme'),
         'options' => weaverx_controls_w_footer_area(),
 
     );
@@ -23,7 +23,7 @@ function weaverx_customizer_define_w_footer_sections(): array
     $w_footer_sections['w_footer-widget-area'] = array(
         'panel' => $panel,
         'title' => esc_html__('Footer Widget Area', 'weaver-xtreme'),
-        'description' => 'Properties for the Footer Widget Area.',
+        'description' => esc_html__('Properties for the Footer Widget Area.','weaver-xtreme'),
         'options' => weaverx_controls_w_footer_widget(),
 
     );
@@ -31,7 +31,7 @@ function weaverx_customizer_define_w_footer_sections(): array
     $w_footer_sections['w_footer-html'] = array(
         'panel' => $panel,
         'title' => esc_html__('Footer HTML', 'weaver-xtreme'),
-        'description' => 'Add arbitrary HTML to Footer Area (in &lt;div id="footer-html"&gt;).',
+        'description' => esc_html__('Add arbitrary HTML to Footer Area (in &lt;div id="footer-html"&gt;).','weaver-xtreme'),
         'options' => weaverx_controls_w_footer_html(),
 
     );
@@ -39,7 +39,7 @@ function weaverx_customizer_define_w_footer_sections(): array
     $w_footer_sections['w_footer-copyright'] = array(
         'panel' => $panel,
         'title' => esc_html__(' Site Copyright', 'weaver-xtreme'),
-        'description' => 'Change Site Copyright text.',
+        'description' => esc_html__('Change Site Copyright text.','weaver-xtreme'),
         'options' => weaverx_controls_w_footer_copyright(),
 
     );

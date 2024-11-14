@@ -14,7 +14,7 @@ function weaverx_customizer_define_w_infobar_sections(): array
     $infobar_sections['infobar-settings'] = array(
         'panel' => $panel,
         'title' => esc_html__('Infobar Settings', 'weaver-xtreme'),
-        'description' => 'Set Infobar options.',
+        'description' => esc_html__('Set Infobar options.','weaver-xtreme'),
         'options' => weaverx_controls_w_infobar_settings(),
     );
 

@@ -73,7 +73,7 @@ body {
 
 /** === Title === */
 .editor-post-title {
-	margin-bottom: -15px;
+	/* margin-bottom: -15px; WP 6.7 breaks this rule */
 }
 
 .edit-post-layout .editor-post-title textarea {

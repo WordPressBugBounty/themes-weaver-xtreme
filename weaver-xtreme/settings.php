@@ -21,7 +21,7 @@ if (!defined('ABSPATH')) {
 
 /* Version Information */
 
-const WEAVERX_VERSION = '6.6';      // change here, style.css and readme.txt
+const WEAVERX_VERSION = '6.7';      // change here, style.css and readme.txt
 const WEAVERX_VERSION_ID = 100;
 const WEAVERX_THEMENAME = 'Weaver Xtreme'; // do not change in child theme!
 

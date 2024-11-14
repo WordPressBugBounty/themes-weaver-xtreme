@@ -1,6 +1,16 @@
 <?php
 /** PHP 7.4 features added */
 
+// fix for Weaver 6.6.1 after exit customizer
+
+function weaverx_restart_customizer()
+{
+    // helps exit via X button from customizer get back to right place
+    // used for handling Weaver Xtreme options that need to reload options
+    // and restart customizer.
+    wp_redirect(admin_url('customize.php'));
+}
+
 if (class_exists('WP_Customize_Control') && !class_exists('WeaverX_Save_WX_Settings')) :
     /**
      * Class WeaverX_Save_Settings
@@ -319,8 +329,7 @@ if (class_exists('WP_Customize_Control') && !class_exists('WeaverX_Restore_WX_Se
                 weaverx_clear_opt_cache();
                 weaverx_alert(esc_html__('Restoring settings from WP database.', 'weaver-xtreme'));
             }
-            wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2F'));
-
+            weaverx_restart_customizer(); // back to customizer
         }
 
         static private function _restore($wp_customize)
@@ -400,7 +409,7 @@ You may need to check your folder permissions or other server settings.', 'weave
             }
 
             // we will now redirect to the customizer so all settings are reloaded
-            wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2Fthemes.php%3Fpage%3DWeaverX'));
+            weaverx_restart_customizer(); // back to customizer
         }
 
         static public function reset_options($contents, $ext)
@@ -687,7 +696,7 @@ if (class_exists('WP_Customize_Control') && !class_exists('WeaverX_Load_WX_Subth
                 return false;
             }
 
-            wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2Fthemes.php%3Fpage%3DWeaverX'));
+            weaverx_restart_customizer(); // back to customizer
             return true;    // never get here...
         }
 
@@ -925,7 +934,7 @@ if (class_exists('WP_Customize_Control') && !class_exists('WeaverX_Set_Customize
                     unset($_POST['wvrx_cust_level_beginner']);
                     unset($_REQUEST['wvrx_cust_level_beginner']);
                     set_theme_mod('_options_level', 1);
-                    wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2F'));
+                    weaverx_restart_customizer(); // back to customizer
                     //weaverx_alert( 'BEGINNER' );
                 }
                 if (isset($_REQUEST['wvrx_cust_level_intermediate'])) {
@@ -933,14 +942,14 @@ if (class_exists('WP_Customize_Control') && !class_exists('WeaverX_Set_Customize
                     unset($_REQUEST['wvrx_cust_level_intermediate']);
                     set_theme_mod('_options_level', 5);
                     //weaverx_alert( 'INTERMEDIATE' );
-                    wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2F'));
+                    weaverx_restart_customizer(); // back to customizer
                 }
                 if (isset($_REQUEST['wvrx_cust_level_advanced'])) {
                     unset($_POST['wvrx_cust_level_advanced']);
                     unset($_REQUEST['wvrx_cust_level_advanced']);
                     set_theme_mod('_options_level', 10);
                     //weaverx_alert( 'ADVANCED' );
-                    wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2F'));
+                    weaverx_restart_customizer(); // back to customizer
                 }
 
                 // Interface
@@ -949,16 +958,15 @@ if (class_exists('WP_Customize_Control') && !class_exists('WeaverX_Set_Customize
                     unset($_POST['wvrx_cust_interface_what']);
                     unset($_REQUEST['wvrx_cust_interface_what']);
                     set_theme_mod('_options_interface', 'what');
-                    wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2F'));
+                    weaverx_restart_customizer(); // back to customizer
                 }
 
                 if (isset($_REQUEST['wvrx_cust_interface_where'])) {
                     unset($_POST['wvrx_cust_interface_where']);
                     unset($_REQUEST['wvrx_cust_interface_where']);
                     set_theme_mod('_options_interface', 'where');
-                    wp_redirect(home_url('/wp-admin/customize.php?return=%2Fwp-admin%2F'));
+                    weaverx_restart_customizer(); // back to customizer
                 }
-
 
                 // now reload customizer to top level.
             }

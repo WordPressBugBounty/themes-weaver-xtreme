@@ -50,7 +50,7 @@ function weaverx_customizer_define_w_global_sections(): array
     $w_global_sections['w_global-align'] = array(
         'panel' => $panel,
         'title' => esc_html__('Alignment and Spacing - Global Settings', 'weaver-xtreme'),
-        'description' => 'Global Settings for Alignment and Spacing.',
+        'description' => esc_html__('Global Settings for Alignment and Spacing.','weaver-xtreme'),
         'options' => weaverx_controls_w_global_align(),
 
     );
@@ -61,7 +61,7 @@ function weaverx_customizer_define_w_global_sections(): array
     $w_global_sections['w_global-borders'] = array(
         'panel' => $panel,
         'title' => esc_html__('Borders - Global Settings', 'weaver-xtreme'),
-        'description' => 'Settings for Borders, Rounded Corners, and Shadows.',
+        'description' => esc_html__('Settings for Borders, Rounded Corners, and Shadows.','weaver-xtreme'),
         'options' => weaverx_controls_w_global_borders(),
 
     );
@@ -73,7 +73,7 @@ function weaverx_customizer_define_w_global_sections(): array
     $w_global_sections['w_global-images'] = array(
         'panel' => $panel,
         'title' => esc_html__('Images - Global Settings', 'weaver-xtreme'),
-        'description' => 'Set Image Border options for Site Wrapper &amp; Container.',
+        'description' => esc_html__('Set Image Border options for Site Wrapper &amp; Container.','weaver-xtreme'),
         'options' => weaverx_controls_w_global_images(),
 
     );
@@ -83,7 +83,7 @@ function weaverx_customizer_define_w_global_sections(): array
     $w_global_sections['w_global-links'] = array(
         'panel' => $panel,
         'title' => esc_html__('Links - Global Settings', 'weaver-xtreme'),
-        'description' => 'Global default for link colors (not including menus and titles). There are also link settings for specific areas.',
+        'description' => esc_html__('Global default for link colors (not including menus and titles). There are also link settings for specific areas.','weaver-xtreme'),
         'options' => weaverx_controls_w_global_links(),
 
     );

@@ -19,7 +19,7 @@ function weaverx_customizer_define_template_sections(): array
     $template_sections['template-global'] = array(
         'panel' => $panel,
         'title' => esc_html__('Global template Settings', 'weaver-xtreme'),
-        'description' => 'Set template options for Site Wrapper &amp; Container. Use Colors to set colors.',
+        'description' => esc_html__('Set template options for Site Wrapper &amp; Container. Use Colors to set colors.','weaver-xtreme'),
         'options' => weaverx_controls_template_global(),
 
     );

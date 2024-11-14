@@ -19,7 +19,7 @@ function weaverx_customizer_define_colorscheme_sections(): array
     $colorscheme_sections['color-wrapping'] = array(
         'panel' => $panel,
         'title' => esc_html__('Wrapping Areas', 'weaver-xtreme'),
-        'description' => 'Set colors. Use Typography to set fonts.',
+        'description' => esc_html__('Set colors. Use Typography to set fonts.','weaver-xtreme'),
         'options' => weaverx_controls_colors_wrapping(),
     );
 
@@ -29,7 +29,7 @@ function weaverx_customizer_define_colorscheme_sections(): array
     $colorscheme_sections['color-links'] = array(
         'panel' => $panel,
         'title' => esc_html__('Links', 'weaver-xtreme'),
-        'description' => 'Set colors for links. Use Typography to set fonts.',
+        'description' => esc_html__('Set colors for links. Use Typography to set fonts.','weaver-xtreme'),
         'options' => weaverx_controls_colors_links(),
     );
 
@@ -101,7 +101,7 @@ function weaverx_customizer_define_colorscheme_sections(): array
     $colorscheme_sections['color-widgets'] = array(
         'panel' => $panel,
         'title' => esc_html__('Individual Widgets', 'weaver-xtreme'),
-        'description' => 'Properties for individual widgets (e.g., Text, Recent Posts, etc.)',
+        'description' => esc_html__('Properties for individual widgets (e.g., Text, Recent Posts, etc.)','weaver-xtreme'),
         'options' => weaverx_controls_colors_widgets(),
     );
 

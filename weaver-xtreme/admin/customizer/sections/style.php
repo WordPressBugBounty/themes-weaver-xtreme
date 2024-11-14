@@ -14,7 +14,7 @@ function weaverx_customizer_define_style_sections(): array
     $style_sections['style-global'] = array(
         'panel' => $panel,
         'title' => esc_html__('Global Style Options', 'weaver-xtreme'),
-        'description' => 'Set some global settings that affect style.',
+        'description' => esc_html__('Set some global settings that affect style.','weaver-xtreme'),
         'options' => weaverx_controls_style_global(),
     );
 

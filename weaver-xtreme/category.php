@@ -17,7 +17,7 @@ weaverx_sb_precontent('category');
 
 if (have_posts()) {
     // translators: %s category title
-    $msg = apply_filters('weaverx_category_archives', __('Category Archives: %s', 'weaver-xtreme'));
+    $msg = apply_filters('weaverx_category_archives', esc_html__('Category Archives: %s', 'weaver-xtreme'));
     $titlew = '<span class="category-title-label">' .
         sprintf($msg, '</span><span class="archive-info">' . single_cat_title('', false) . '</span>');
     ?>

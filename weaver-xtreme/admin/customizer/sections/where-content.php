@@ -14,7 +14,7 @@ function weaverx_customizer_define_w_content_sections(): array
     $w_content_sections['w_content-content'] = array(
         'panel' => $panel,
         'title' => esc_html__('Content Area', 'weaver-xtreme'),
-        'description' => 'Area properties for page and post content.',
+        'description' => esc_html__('Area properties for page and post content.','weaver-xtreme'),
         'options' => weaverx_controls_w_content_content(),
     );
 
@@ -22,42 +22,42 @@ function weaverx_customizer_define_w_content_sections(): array
     $w_content_sections['w_content-links'] = array(
         'panel' => $panel,
         'title' => esc_html__('Links', 'weaver-xtreme'),
-        'description' => 'Options for content area links',
+        'description' => esc_html__('Options for content area links','weaver-xtreme'),
         'options' => weaverx_controls_w_content_links(),
     );
 
     $w_content_sections['w_content-search-boxes'] = array(
         'panel' => $panel,
         'title' => esc_html__('Search Boxes', 'weaver-xtreme'),
-        'description' => 'Search box related options.',
+        'description' => esc_html__('Search box related options.','weaver-xtreme'),
         'options' => weaverx_controls_w_content_search_boxes(),
     );
 
     $w_content_sections['w_content-images'] = array(
         'panel' => $panel,
         'title' => esc_html__('BG Images', 'weaver-xtreme'),
-        'description' => 'Background Images for Content area and Pages..',
+        'description' => esc_html__('Background Images for Content area and Pages..','weaver-xtreme'),
         'options' => weaverx_controls_w_content_images(),
     );
 
     $w_content_sections['w_content-fi-pages'] = array(
         'panel' => $panel,
         'title' => esc_html__('Featured Image - Pages', 'weaver-xtreme'),
-        'description' => 'Display of Page Featured Images.',
+        'description' => esc_html__('Display of Page Featured Images.','weaver-xtreme'),
         'options' => weaverx_controls_w_content_fi_pages(),
     );
 
     $w_content_sections['w_content-lists'] = array(
         'panel' => $panel,
         'title' => esc_html__('Lists - &lt;HR&gt; - Tables', 'weaver-xtreme'),
-        'description' => 'Other options related to content.',
+        'description' => esc_html__('Other options related to content.','weaver-xtreme'),
         'options' => weaverx_controls_w_content_lists(),
     );
 
     $w_content_sections['w_content-comments'] = array(
         'panel' => $panel,
         'title' => esc_html__('Comments', 'weaver-xtreme'),
-        'description' => 'Settings for displaying comments.',
+        'description' => esc_html__('Settings for displaying comments.','weaver-xtreme'),
         'options' => weaverx_controls_w_content_comments(),
 
     );

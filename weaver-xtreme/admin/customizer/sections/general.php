@@ -265,7 +265,7 @@ theme file for sharing with others, or for you own identification.', 'weaver-xtr
                         'control_type' => 'WeaverX_Textarea_Control',
                         'label' => esc_html__('Theme Name', 'weaver-xtreme'),
                         'type' => 'textarea',
-                        'description' => 'This DEV ONLY option is used to set the theme_filename option for official theme subthemes.',
+                        'description' => esc_html__('This DEV ONLY option is used to set the theme_filename option for official theme subthemes.','weaver-xtreme'),
                         'input_attrs' => array(
                             'rows' => '1',
                             'placeholder' => esc_html__('DEV ONLY - subtheme .wxt base name', 'weaver-xtreme'),

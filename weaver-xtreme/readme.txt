@@ -6,8 +6,8 @@ Theme URI: http://weavertheme.com
 Tags: custom-header, custom-colors, custom-background, custom-menu, theme-options, left-sidebar, right-sidebar, fixed-width, three-columns, two-columns, black, blue, brown, green, orange, red, tan, dark, white, light,translation-ready, rtl-language-support, editor-style
 Copyright: Weaver Xtreme Theme - Copyright 2014-2024 Bruce E Wampler
 Requires at least: 7.4
-Tested up to: 6.6
-Stable tag: 6.6
+Tested up to: 6.7
+Stable tag: 6.7
 
 == Description ==
 
@@ -150,5 +150,13 @@ Weaver's PHP code formatted using IntelliJ Idea's PHP formatter.
 
 = Version 6.6 =
 * WP Version 6.6 compatible
-* Update: wp database autoload options for API default
+* Update: wp database autoload options for WP database API default
 * Update: WP-CLI PHP type problem
+
+= Version 6.6.1 =
+* Fix: Some Customizer messages missing translation function calls.
+* Fix: How Customizer closes if WP was installed in sub-directory.
+
+= Version 6.7 =
+= Updates: Compatibility with new WP 6.7 Customizer controls code. Icons removed from WHAT interface. The > on right of controls does not respond. Hope to restore these in the future.
+= Fix: Changed styling of Page/Post Title in Block Editor to restore spacing.

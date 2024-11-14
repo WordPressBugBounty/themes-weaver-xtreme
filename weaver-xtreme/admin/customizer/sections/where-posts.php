@@ -14,28 +14,28 @@ function weaverx_customizer_define_w_posts_sections(): array
     $w_posts_sections['w_posts-post-area'] = array(
         'panel' => $panel,
         'title' => esc_html__('Post Area', 'weaver-xtreme'),
-        'description' => 'Use these settings to override Content Area settings for Posts (blog entries).',
+        'description' => esc_html__('Use these settings to override Content Area settings for Posts (blog entries).','weaver-xtreme'),
         'options' => weaverx_controls_w_posts_posts(),
     );
 
     $w_posts_sections['w_posts-post-title'] = array(
         'panel' => $panel,
         'title' => esc_html__('Post Title', 'weaver-xtreme'),
-        'description' => 'Options for the Post Title.',
+        'description' => esc_html__('Options for the Post Title.','weaver-xtreme'),
         'options' => weaverx_controls_w_posts_title(),
     );
 
     $w_posts_sections['w_posts-post-layout'] = array(
         'panel' => $panel,
         'title' => esc_html__('Post Layout', 'weaver-xtreme'),
-        'description' => 'Layout of Posts.',
+        'description' => esc_html__('Layout of Posts.','weaver-xtreme'),
         'options' => weaverx_controls_w_posts_layout(),
     );
 
     $w_posts_sections['w_posts-post-excerpts'] = array(
         'panel' => $panel,
         'title' => esc_html__('Excerpts / Full Posts', 'weaver-xtreme'),
-        'description' => 'How to display posts in Blog / Archive Views',
+        'description' => esc_html__('How to display posts in Blog / Archive Views','weaver-xtreme'),
         'options' => weaverx_controls_w_posts_excerpts(),
     );
 
@@ -49,14 +49,14 @@ function weaverx_customizer_define_w_posts_sections(): array
     $w_posts_sections['w_posts-post-meta'] = array(
         'panel' => $panel,
         'title' => esc_html__('Post Meta Info Lines', 'weaver-xtreme'),
-        'description' => 'Top and Bottom Post Meta Information lines.',
+        'description' => esc_html__('Top and Bottom Post Meta Information lines.','weaver-xtreme'),
         'options' => weaverx_controls_w_posts_meta(),
     );
 
     $w_posts_sections['w_posts-post-custom-meta'] = array(
         'panel' => $panel,
         'title' => esc_html__('Custom Post Meta Lines', 'weaver-xtreme'),
-        'description' => 'Replace Post Meta Info Lines with custom info line templates. Advanced options: see help file.',
+        'description' => esc_html__('Replace Post Meta Info Lines with custom info line templates. Advanced options: see help file.','weaver-xtreme'),
         'options' => weaverx_controls_w_posts_custom_meta(),
     );
 
@@ -64,7 +64,7 @@ function weaverx_customizer_define_w_posts_sections(): array
     $w_posts_sections['w_posts-post-other'] = array(
         'panel' => $panel,
         'title' => esc_html__('Other Post Related Options', 'weaver-xtreme'),
-        'description' => 'Other options related to post display, including single pages.',
+        'description' => esc_html__('Other options related to post display, including single pages.','weaver-xtreme'),
         'options' => weaverx_controls_w_posts_other(),
     );
 

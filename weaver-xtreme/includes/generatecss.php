@@ -1401,7 +1401,7 @@ function weaverx_sidebar_style($override = 0): void
 
     // Version 2.0.10 change: Because of significant degradation of desktop refresh using .is-desktop for these rules,
     // they are now wrapped with the @media for desktops. This means that full support for non-default ( non-25% ) sidebars
-    // on the desktop is no longer supportd for IE8. Instead, we allow IE8 to gracefully degrade to only showing default widths.
+    // on the desktop is no longer supported for IE8. Instead, we allow IE8 to gracefully degrade to only showing default widths.
     // All the rules between the @media }{} formerly had .is-desktop leading each rule. These have been removed.
 
     weaverx_cat_css("@media screen and ( min-width:768px) {\n"); // .is-desktop

@@ -15,7 +15,7 @@ function weaverx_customizer_define_spacing_sections(): array
     $spacing_sections['spacing-global'] = array(
         'panel' => $panel,
         'title' => esc_html__('Site Wide Spacing', 'weaver-xtreme'),
-        'description' => 'Set site settings that affect width and height.',
+        'description' => esc_html__('Set site settings that affect width and height.','weaver-xtreme'),
         'options' => weaverx_controls_spacing_global(),
     );
 
@@ -27,7 +27,7 @@ function weaverx_customizer_define_spacing_sections(): array
     $spacing_sections['spacing-wrapping'] = array(
         'panel' => $panel,
         'title' => esc_html__('Wrapping Areas', 'weaver-xtreme'),
-        'description' => 'Set margins, padding, spacing, positioning, and widths for site wrapper and container.',
+        'description' => esc_html__('Set margins, padding, spacing, positioning, and widths for site wrapper and container.','weaver-xtreme'),
         'options' => weaverx_controls_spacing_wrapping(),
     );
 

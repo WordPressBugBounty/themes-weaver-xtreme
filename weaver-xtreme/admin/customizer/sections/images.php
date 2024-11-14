@@ -20,7 +20,7 @@ if (!function_exists('weaverx_customizer_define_image_sections')) :
         $image_sections['images-global'] = array(
             'panel' => $panel,
             'title' => esc_html__('Global Image Settings', 'weaver-xtreme'),
-            'description' => 'Set Image options for Site Wrapper &amp; Container. Use Colors to set colors.',
+            'description' => esc_html__('Set Image options for Site Wrapper &amp; Container. Use Colors to set colors.','weaver-xtreme'),
             'options' => weaverx_controls_images_global(),
 
         );

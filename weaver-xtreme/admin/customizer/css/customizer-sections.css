@@ -247,6 +247,9 @@ li.customize-control.customize-control-range .ui-slider-handle:hover {
 /* ------------------------- per option customization ----------------------- */
 
 
+/* Temporary fix, I hope. Starting with WP 6.7, WP changed the layout of the Customizer controls, so wrapping
+   with icons breaks the What interface.
+
 #accordion-panel-weaverx_general .accordion-section-title:before,
 #accordion-panel-weaverx_general .customize-section-title h3 .customize-action:before {
 	color: #298cba;vertical-align: bottom;margin-right: 0.25em; font-size: 140%;font-family: "dashicons"; content: "\f108"; }
@@ -306,7 +309,7 @@ li.customize-control.customize-control-range .ui-slider-handle:hover {
 #accordion-panel-title_tagline .accordion-section-title:before,
 #accordion-panel-title_tagline .customize-section-title h3 .customize-action:before {
 	color: #298cba;vertical-align: bottom;margin-right: 0.25em; font-size: 140%;font-family: "dashicons"; content: "\f484"; }
-
+*/
 
 #customize-control-weaverx_wrapper_bgcolor .customize-control-title,
 #customize-control-weaverx_body_bgcolor .customize-control-title,
